@@ -28,7 +28,7 @@
 ![About Page](/Screen-Shot-about.png)
 
 #### 404 page
-![About Page](/Screen-Shot-404.png)
+![404 Page](/Screen-Shot-404.png)
 
 ---
 
