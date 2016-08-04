@@ -24,12 +24,6 @@
 #### post page
 ![Post Page](/Screen-Shot-post.png)
 
-#### about page
-![About Page](/Screen-Shot-about.png)
-
-#### 404 page
-![404 Page](/Screen-Shot-404.png)
-
 ---
 
 ### SetUp
