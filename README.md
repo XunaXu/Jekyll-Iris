@@ -11,6 +11,7 @@
 1. Download or clone repo `git clone git@github.com:xunaxu/jekyll-iris.git`
 2. Enter the folder: `cd jekyll-iris/`
 3. Start Jekyll server: `jekyll serve`
+4. Follow console log from the terminal if there are errors
 
 Access, [localhost:4000/](http://localhost:4000/)
 
