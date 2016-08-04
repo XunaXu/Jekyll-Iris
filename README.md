@@ -5,10 +5,10 @@
 ### Demo()
 
 ![Jeykll-Iris - free Jekyll theme](/homepage.gif)
-[Index Page](/screenshot-index.tiff)
-[Post Page](/screenshot-post.tiff)
-[About Page](/screenshot-about.tiff)
-[404 Page](/screenshot-404.tiff)
+![Index Page](/screenshot-index.tiff)
+![Post Page](/screenshot-post.tiff)
+![About Page](/screenshot-about.tiff)
+![404 Page](/screenshot-404.tiff)
 
 ---
 
