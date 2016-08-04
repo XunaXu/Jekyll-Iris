@@ -10,20 +10,20 @@
   }
 
   p {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     color: $medium-gray-color;
-    float: left;
   }
 
-  .social {
-    float: right;
+  .social{
+    display: flex;
+    justify-content: center;
   }
 }
 
 .social {
   li {
     display: inline-block;
-    margin-left: 5px;
+    margin-right: 12px;
   }
 
   a {

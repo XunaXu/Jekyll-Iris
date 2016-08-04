@@ -230,3 +230,38 @@ body.navigation-is-open {
     background-color: $black-color;
   }
 }
+
+.site-header{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  .site-nav{
+    float: right
+  }
+  .site-title{
+    font-size: 20px;
+  }
+
+  &.with-background{
+    background-color: $primary-color;
+
+    a{
+      color: $white-color;
+      border-color: $white-color;
+      &:hover{
+        color: $pink-color;
+        border-color: $white-color;
+      }
+    }
+  }
+}
+
+
+.header-background{
+  z-index: -10;
+  @include background-gradiant;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+}

@@ -36,3 +36,39 @@ body {
 .clearfix {
   @include clearfix;
 }
+
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @include media($min-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }  
+}
+
+.social {
+  li {
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  a {
+    @include transition(opacity .15s ease-in-out);
+    color: $medium-gray-color;
+    text-decoration: none;
+    opacity: .5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+}

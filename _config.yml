@@ -16,31 +16,63 @@ permalink   : /:year/:title/
 markdown    : kramdown
 highlighter : pygments
 
+
 # SEO settings
-title: dotX
+title: Xuna Xu
 description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
 # Site settings
-url: http://nandomoreira.me
-baseurl: "/dotX"
+url: http://xunaxu.com
+baseurl: ""
 # baseurl: ""
+paginate_path: /page:num
+gems: [jekyll-paginate, jemoji]
+paginate: 5
+
+
+# Dynamic Text on the Header 
+
+dynamic-typing: True
+shuffle: True # Shuffle the lines.
+loop: True
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 10
+start-delay: 200
+delete-delay: 5000
+lines: # You can add HTML Tags in the Text
+  - text: "Hey There! Welcome to my webpage."
+  - text: "The lower you fall, the higher you'll fly."
+
+
 
 # Author settings
 author:
-  name      : Fernando Moreira
+  name      : Xuna Xu
   job       : Frontend Engineer
   bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
   thumb     : /images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  twitter   : http://twitter.com/nandomoreirame
-  facebook  : http://facebook.com/fernando.dev
-  linkedin  : http://linkedin.com/in/nandomoreirame
+  email     : 78756e61@gmail.com
+  url       : http://xunaxu.com
+  github    : http://github.com/xunaxu
+  twitter   : http://twitter.com/xuna_x
+  linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
 
 # google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/dotX
+#repo: http://github.com/xunaxu/dotX
 
 # comments
-disqus_shortname: "fernandomoreira"
+comments: true
+disqus_shortname: "xunaxu"
+
+#share
+email-share: true
+fb-share: true
+twitter-share: true
+linkedin-share: true
+reddit-share: true
+google-plus-share: true
+tumblr-share: false
+pinterest-share: false
+pocket-share: false
+vkontakte-share: false
