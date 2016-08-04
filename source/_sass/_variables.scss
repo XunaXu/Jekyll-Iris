@@ -31,8 +31,7 @@ $base-z-index: 0;
 // Colors
 //
 $primary-color: #7E57C2;
-$pink-color: #F48FB1;
-$violet-color: #5E35B1;
+$highlight-color: #F48FB1;
 $white-color: #fff;
 $black-color: #000;
 $blue-color: #477dca;
@@ -44,7 +43,7 @@ $lighter-gray-color: lighten($light-gray-color, 20%);
 // Font Colors
 //
 $base-font-color: $medium-gray-color;
-$action-color: $pink-color;
+$action-color: $highlight-color;
 
 // Border
 //

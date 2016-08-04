@@ -25,23 +25,21 @@ keywords: "Jekyll, theme, free, download, SEO, blog, web"
 # Site settings
 url: http://xunaxu.com
 baseurl: ""
-# baseurl: ""
 paginate_path: /page:num
 gems: [jekyll-paginate, jemoji]
 paginate: 5
 
 
 # Dynamic Text on the Header 
-
-dynamic-typing: True
-shuffle: True # Shuffle the lines.
-loop: True
-loop-count: False # Set False for infinite loop, or set any number for finite loop.
+dynamic-typing: true
+shuffle: true # Shuffle the lines.
+loop: true
+loop-count: false # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Hey There! Welcome to my webpage."
+  - text: "The best preparation for tomorrow is doing your best today. -H. Jackson Brown, Jr."
   - text: "The lower you fall, the higher you'll fly."
 
 
@@ -49,17 +47,15 @@ lines: # You can add HTML Tags in the Text
 # Author settings
 author:
   name      : Xuna Xu
-  job       : Frontend Engineer
-  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb     : /images/author.jpg
+  job       : Software Engineer
   email     : 78756e61@gmail.com
   url       : http://xunaxu.com
   github    : http://github.com/xunaxu
   twitter   : http://twitter.com/xuna_x
   linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
 
-# google_analytics: UA-52446115-1
-#repo: http://github.com/xunaxu/dotX
+google_analytics: UA-81923223-1
+#repo: http://github.com/xunaxu/jekyll-iris
 
 # comments
 comments: true
@@ -70,7 +66,7 @@ email-share: true
 fb-share: true
 twitter-share: true
 linkedin-share: true
-reddit-share: true
+reddit-share: false
 google-plus-share: true
 tumblr-share: false
 pinterest-share: false

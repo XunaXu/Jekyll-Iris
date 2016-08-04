@@ -1,7 +1,7 @@
 
 .post-header {
   margin-bottom: $base-spacing;
-  padding: 4em 2em;
+  padding: 3em 2em;
 }
 
 .post-title,
@@ -84,6 +84,15 @@
 
         @include media($min-tablet) {
           padding-top: 0px;
+        }
+
+        a{
+          color: $light-gray-color;
+          &:hover,
+          &:focus,
+          &:active {
+            color: $primary-color;
+          }
         }
       }   
     }

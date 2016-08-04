@@ -248,8 +248,8 @@ body.navigation-is-open {
       color: $white-color;
       border-color: $white-color;
       &:hover{
-        color: $pink-color;
-        border-color: $white-color;
+        color: $highlight-color;
+        border-color: $highlight-color;
       }
     }
   }

@@ -24,20 +24,26 @@
   li {
     display: inline-block;
     margin-right: 12px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
   }
 
   a {
-    @include transition(opacity .15s ease-in-out);
-    color: $medium-gray-color;
+    @include transition(color .15s ease-in-out);
     text-decoration: none;
-    opacity: .5;
 
-    &:hover,
-    &:focus,
-    &:active {
+      color: $primary-color;
       opacity: 1;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $highlight-color;
+      }
     }
-  }
+  
 
   .icon {
     font-size: 1.2rem;
