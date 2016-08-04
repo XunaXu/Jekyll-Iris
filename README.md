@@ -2,6 +2,20 @@
 
 :gem: Simple & Beautiful Jekyll theme
 
+### Features
+
+- Responsive, scale for tablets, mobiles and desktops
+- Estimated Reading Time 
+- Dynamic Typed Message for intro at index/home page
+- Post Preview at index/home page
+- Older and Newer Post Navigation at index/home page
+- Next and Prev Post Navigation at each blog/article
+- Comments for each blog/article
+- Share each blog/article via social medias
+- 404 not found
+
+---
+
 ### Demo()
 
 #### index page
@@ -13,21 +27,10 @@
 #### about page
 ![About Page](/Screen-Shot-about.png)
 
+#### 404 page
+![About Page](/Screen-Shot-404.png)
+
 ---
-
-### Features
-
-- Responsive, scale for tablets, mobiles and desktops
-- Estimated Reading Time 
-- Dynamic Typed Message for intro at index/home page
-- Post Preview at index/home page
-- Older and Newer Post Navigation at index/home page
-- Next and Prev Post Navigation at each blog/article
-- Comments for each blog/article
-- Share each blog/article via social medias
-- 404 not found page
-
-___
 
 ### SetUp
 
