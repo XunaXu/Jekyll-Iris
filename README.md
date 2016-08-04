@@ -2,18 +2,22 @@
 
 :gem: Simple & Beautiful Jekyll theme
 
-### [Demo]()
+### Demo()
 
 ![Jeykll-Iris - free Jekyll theme](/homepage.gif)
+[Index Page](/screenshot-index.tiff)
+[Post Page](/screenshot-post.tiff)
+[About Page](/screenshot-about.tiff)
+[404 Page](/screenshot-404.tiff)
 
 ---
 
-### Start in 4 steps
+### Start in 3 steps
 
 1. Download or clone repo `git clone git@github.com:xunaxu/jekyll-iris.git`
 2. Enter the folder: `cd jekyll-iris/`
-3. Start Jekyll server: `jekyll serve`
-4. Follow console log from the terminal.
+3. Start Jekyll server: `jekyll serve` 
+4. Follow console log from the terminal
 
 Access, [localhost:4000/](http://localhost:4000/)
 
@@ -29,13 +33,13 @@ Change the color theme in _variables.scss
 ### Credits:
 
 Forked from:
-* dotX Jekyll Theme (https://github.com/nandomoreirame/dotX)
+* [dotX Jekyll Theme](https://github.com/nandomoreirame/dotX)
 
 Inspired from:
-* clean Jekyll Theme (https://github.com/scotte/jekyll-clean)
-* jeykll-Mono Jekyll Theme (https://github.com/AkshayAgarwal007/Jekyll-Mono)
-* long-haul Jekyll Theme (https://github.com/brianmaierjr/long-haul)
-* personal-jekyll-theme Jekyll Theme (https://github.com/PanosSakkos/personal-jekyll-theme)
+* [clean Jekyll Theme](https://github.com/scotte/jekyll-clean)
+* [jeykll-Mono Jekyll Theme](https://github.com/AkshayAgarwal007/Jekyll-Mono)
+* [long-haul Jekyll Theme](https://github.com/brianmaierjr/long-haul)
+* [personal-jekyll-theme Jekyll Theme](https://github.com/PanosSakkos/personal-jekyll-theme)
 
 ___
 
