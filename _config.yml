@@ -23,8 +23,8 @@ description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
 # Site settings
-url: https://xunaxu.github.io
-baseurl: "/Jeykll-Iris"
+url: https://xunaxu.github.io/Jeykll-Iris
+baseurl: ""
 paginate_path: /page:num
 gems: [jekyll-paginate, jemoji]
 paginate: 3
