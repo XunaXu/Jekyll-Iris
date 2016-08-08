@@ -24,7 +24,7 @@ keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
 # Site settings
 url: https://xunaxu.github.io
-baseurl: "/Jeykll-Iris"
+baseurl: "/Jekyll-Iris"
 paginate_path: /page:num
 gems: [jekyll-paginate, jemoji]
 paginate: 2
