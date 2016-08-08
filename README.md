@@ -16,7 +16,7 @@
 
 ---
 
-### [Demo](https://xunaxu.github.io/Jeykll-Iris/)
+### :hatched_chick: :hatched_chick: [Demo](https://xunaxu.github.io/Jeykll-Iris/) :hatched_chick::hatched_chick:
 
 #### index page
 ![Jeykll-Iris - free Jekyll theme](/homepage.gif)
