@@ -16,7 +16,7 @@
 
 ---
 
-### [Demo](https://xunaxu.github.io/)
+### [Demo](https://xunaxu.github.io/Jeykll-Iris/)
 
 #### index page
 ![Jeykll-Iris - free Jekyll theme](/homepage.gif)
