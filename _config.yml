@@ -23,11 +23,11 @@ description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
 # Site settings
-url: https://xunaxu.github.io/Jeykll-Iris
-baseurl: ""
+url: https://xunaxu.github.io
+baseurl: "/Jeykll-Iris"
 paginate_path: /page:num
 gems: [jekyll-paginate, jemoji]
-paginate: 3
+paginate: 2
 
 
 # Dynamic Text on the Header 
