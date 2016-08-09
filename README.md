@@ -6,13 +6,15 @@
 
 - Responsive, scale for tablets, mobiles and desktops
 - Estimated Reading Time 
-- Dynamic Typed Message for intro at index/home page
-- Post Preview at index/home page
-- Older and Newer Post Navigation at index/home page
-- Next and Prev Post Navigation at each blog/article
-- Comments for each blog/article
-- Share each blog/article via social medias
+- Dynamic Typed Message for intro 
+- Post Preview at home page
+- Older and Newer Post Navigation at home page
+- Next and Prev Post Navigation for each blog
+- Comments
+- Share blogs
 - 404 not found
+- Mobile friendly
+- Performance tested, fast.
 
 ---
 
