@@ -42,10 +42,7 @@
     margin-bottom: 0px;
 
     .post-link {
-      font-size: 25px;
-      @include media($min-phone-large) {
-        font-size: 29px;
-      }   
+      font-size: 29px;   
     }
   }
 
@@ -66,16 +63,13 @@
 
 .post{
   .post-title{
-    .title{
-      font-weight: bold;
-      font-size: 25px;
-
-      @include media($min-phone-large) {
-        font-size: 30px;
-      } 
-    }
     padding-top: 30px;
 
+    .title{
+      font-weight: bold;
+      font-size: 29px;
+    }  
+      
     .post-info {
       opacity: 0.7;
 

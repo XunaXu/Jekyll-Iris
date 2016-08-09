@@ -39,7 +39,7 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The best preparation for tomorrow is doing your best today. -H. Jackson Brown, Jr."
+  - text: "The best preparation for tomorrow is doing your best today."
   - text: "The lower you fall, the higher you'll fly."
 
 

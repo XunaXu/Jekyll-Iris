@@ -78,24 +78,21 @@ picture {
 
 
 pre {
-  -webkit-overflow-scrolling: touch;
-  font-family: consolas, monaco, monospace;
-  font-size: 0.9em;
-  margin: 0;
   border-top: $base-border;
   border-bottom: $base-border;
   padding: 10px;
   margin: 10px 0;
-  background-color: lighten($lighter-gray-color, 17%);
+  background-color: #f9f9f9;
 
   code {
-    line-height: 1.75em;
-    border-radius: 0;
-    border: none;
-    font-family: "Courier New", monospace;
-    font-size: 0.9em;
     margin: 0;
     padding: 0 5px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.7rem;
+
+    @include media($max-tablet) {
+      font-size: 0.9rem;
+    }
   }
 }
 
