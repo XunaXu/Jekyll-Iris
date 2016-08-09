@@ -1,6 +1,6 @@
 ## Jekyll Iris
 
-:gem: Simple & Beautiful Jekyll theme   :point_right: [Demo](https://xunaxu.github.io/Jekyll-Iris/)
+:gem: A Delightful & Friendly Jekyll Theme   :point_right: [Demo](https://xunaxu.github.io/Jekyll-Iris/)
 
 ### Features
 
