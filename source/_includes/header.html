@@ -1,0 +1,30 @@
+
+{% if page.url == "/" | prepend: {{site.baseurl}} or page.url contains "page" %}
+<header class="site-header container">
+    <a class="site-title" href="{{ site.baseurl }}/"><strong>{{ site.title }}</strong></a>
+
+    <nav class="site-nav">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link button_outline" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+    </nav>
+</header>
+{% else %}
+<header class="site-header with-background">
+	<div class="container">
+    <a class="site-title" href="{{ site.baseurl }}/"><strong>{{ site.title }}</strong></a>
+
+    <nav class="site-nav">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link button_outline" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+    </nav>
+    </div>
+</header>
+{% endif %}
+
+

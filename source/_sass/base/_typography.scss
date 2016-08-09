@@ -1,0 +1,101 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $font-weight-normal;
+  color: $base-font-color;
+
+  @include media($max-tablet) {
+    font-size: $large-font-size;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+p {
+  margin: 0 0 $small-spacing;  
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+  
+  &.button_outline{
+    padding: 4px 7px;
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+    white-space: nowrap;
+  } 
+
+  &.italic{
+    font-style: italic;
+  }
+  
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: $highlight-color;
+    border-color: $highlight-color;
+  }
+}
+
+with-border {
+  border: 1px solid $primary-color;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+
+pre {
+  border-top: $base-border;
+  border-bottom: $base-border;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+
+  code {
+    margin: 0;
+    padding: 0 5px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.7rem;
+
+    @include media($max-tablet) {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.opac{
+  opacity: 0.5;
+}

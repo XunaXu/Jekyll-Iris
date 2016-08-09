@@ -1,0 +1,21 @@
+
+<script src="{{ "/assets/js/jquery-2.1.1.js" | prepend: site.baseurl }}"></script>
+<!-- <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+ --><script src="{{ "/assets/js/typed.min.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript">
+
+  var myQuotes =  new Array();
+  {% for line in site.lines %}
+    myQuotes.push("{{ line.text }}");
+  {% endfor %}
+
+    $(".intro-post-title").typed({
+      strings: myQuotes,
+      typeSpeed: {{ site.type-speed }},
+      backDelay: {{ site.delete-delay }},
+      startDelay: {{ site.start-delay }},
+      loop: {{ site..loop }},
+      loopCount: {{ site.loop-count }},
+      cursorChar: "|"
+    });
+  </script>

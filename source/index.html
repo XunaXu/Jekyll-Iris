@@ -1,0 +1,40 @@
+---
+layout: default
+subtitle: what I'm writing..
+---
+
+<section class="post-list">
+  <header class="post-header intro">
+    <div class="intro-in">
+      <span class="intro-post-title"></span>
+    </div>
+  </header>
+
+  {% for post in paginator.posts %}
+    <article class="post-item container">
+      <header>
+
+        <h1 class="post-title">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
+        </h1>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} &nbsp;&nbsp;|&nbsp;&nbsp; {{ post.content | number_of_words | divided_by:150 }} Min Read &nbsp;&nbsp; 
+        </span>
+
+
+        </span>
+      </header>
+
+      <p>{{ post.content | strip_html | truncatewords: 56 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more button_outline">Read more</a></p>
+    </article>
+  {% endfor %}
+
+  <!-- Pagination links -->
+  <div class="pagination container">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button_outline">Newer Posts</a> 
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button_outline">Older Posts</a>
+    {% endif %}
+  </div>
+</section> 
