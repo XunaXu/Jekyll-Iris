@@ -1,6 +1,6 @@
 ## Jekyll Iris
 
-:gem: Simple & Beautiful Jekyll theme
+:gem: Simple & Beautiful Jekyll theme   :point_right: [Demo](https://xunaxu.github.io/Jekyll-Iris/)
 
 ### Features
 
@@ -18,7 +18,7 @@
 
 ---
 
-### :hatched_chick: :hatched_chick: [Demo](https://xunaxu.github.io/Jekyll-Iris/) :hatched_chick::hatched_chick:
+### [Demo](https://xunaxu.github.io/Jekyll-Iris/)
 
 #### index page
 ![Jeykll-Iris - free Jekyll theme](/homepage.gif)
