@@ -1,6 +1,6 @@
 // Typography
 //
-$base-font-family: 'Proxima Nova', Arial, sans-serif;
+$base-font-family: Arial, sans-serif;
 $serif-font-family: "Georgia", serif;
 $heading-font-family: $base-font-family;
 $fonts-path: '../fonts/';
@@ -13,7 +13,7 @@ $font-weight-bold: 600;
 
 // Font Sizes
 //
-$base-font-size: 1rem;
+$base-font-size: 0.9rem;
 
 // Line height
 //
@@ -36,7 +36,7 @@ $white-color: #fff;
 $black-color: #000;
 $blue-color: #477dca;
 $dark-gray-color: lighten($black-color, 25%);
-$medium-gray-color: lighten($dark-gray-color, 15%);
+$medium-gray-color: lighten($dark-gray-color, 20%);
 $light-gray-color: lighten($medium-gray-color, 20%);
 $lighter-gray-color: lighten($light-gray-color, 20%);
 
