@@ -1,6 +1,6 @@
 ## :purple_heart: Jekyll Iris :purple_heart:
 
-I'd like to share the Jekyll Iris theme for my site.  :point_right: [Demo](https://xunaxu.github.io/Jekyll-Iris/)
+I'd like to share the Jekyll Iris theme from my site.  :point_right: [Demo](https://xunaxu.github.io/Jekyll-Iris/)
 
 ### Features
 
