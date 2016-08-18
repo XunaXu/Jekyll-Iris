@@ -6,15 +6,16 @@
 
 - Responsive, scale for tablets, mobiles and desktops
 - Estimated Reading Time 
-- Dynamic Typed Message for intro 
+- Dynamic Typed Messages for intro 
 - Post Preview at home page
 - Older and Newer Post Navigation at home page
 - Next and Prev Post Navigation for each blog
-- Comments
-- Share blogs
-- 404 not found
-- Mobile friendly
-- Performance tested, fast.
+- Comments and Comment Counts 
+- Share blogs via linked in, twitter, facebook etc.
+- 404 not found page 
+- Mobile friendly.
+- Performance tested, fast loading.
+- Subscribe Form using Mail Chimps.
 
 ---
 
@@ -35,7 +36,13 @@
 3. Start Jekyll server: `jekyll serve` 
 4. Follow console log from the terminal
 
-Access, [localhost:4000/](http://localhost:4000/)
+Access, [http://127.0.0.1:4000/Jekyll-Iris/](http://127.0.0.1:4000/Jekyll-Iris/)
+
+5. replace google_analytics_is at _config.yml
+6. replace disqus_shortname at _config.yml
+7. Go to source/_includes/subscribe.html [by following this tutorial for mailchimps signup form](http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website)
+
+8 run jekyll serve to ensure changes in _config.yml is applied.
 
 ---
 

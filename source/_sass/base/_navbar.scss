@@ -10,13 +10,15 @@
 
   &.with-background{
     background-color: $primary-color;
-
+    position: fixed;
+    width: 100%;
+    
     a{
       color: $white-color;
       border-color: $white-color;
       &:hover{
-        color: $highlight-color;
-        border-color: $highlight-color;
+        color: $secondary-color;
+        border-color: $secondary-color;
       }
     }
   }

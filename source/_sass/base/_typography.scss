@@ -31,8 +31,8 @@ a {
   transition: color $base-duration $base-timing;
   
   &.button_outline{
-    padding: 4px 7px;
-    border-radius: 5px;
+    padding: 3px 13px;
+    border-radius: $base-border-radius;
     border: 1px solid $primary-color;
     white-space: nowrap;
   } 
@@ -45,15 +45,9 @@ a {
   &:focus,
   &:hover {
     text-decoration: none;
-    color: $highlight-color;
-    border-color: $highlight-color;
+    color: $secondary-color;
+    border-color: $secondary-color;
   }
-}
-
-with-border {
-  border: 1px solid $primary-color;
-  padding: 5px;
-  border-radius: 5px;
 }
 
 input, button, select, textarea {

@@ -27,7 +27,7 @@ body.home-intro {
   max-width: $desktop-width;
   margin: auto;
   padding: 4em 0em;
-  min-height: 220px;
+  min-height: 200px;
 
   @include media($min-tablet) {
     padding: 6em 0;

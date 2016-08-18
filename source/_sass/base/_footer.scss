@@ -1,51 +1,22 @@
 
 .site-footer {
-  @extend %clearfix;
+  flex-direction: row;
+  justify-content: space-between;
   padding: $base-spacing 0;
   text-align: center;
-
-  .container {
-    padding-top: $base-spacing;
-    border-top: $base-border;
-  }
-
-  p {
-    margin-bottom: 5px;
-  }
-
-  .social{
-    padding-top: 5px;
-    display: flex;
-    justify-content: center;
-  }
-}
+  border-top: 1px solid $medium-white-color;
 
 .social {
-  li {
-    display: inline-block;
-    margin-right: 12px;
-
-    &:last-child{
-      margin-right: 0px;
-    }
+  .icon{
+    font-size: 1.4em;
   }
 
-  a {
-    @include transition(color .15s ease-in-out);
-    text-decoration: none;
-
-      color: $primary-color;
-      opacity: 1;
-
-      &:hover,
-      &:focus,
-      &:active {
-        color: $highlight-color;
+   @include media($max-tablet){
+    .social {
+      .icon{
+        font-size: 1.5em;
       }
-    }
-  
-
-  .icon {
-    font-size: 1.2rem;
+     }
+   }
   }
 }

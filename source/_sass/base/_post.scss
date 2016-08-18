@@ -10,12 +10,12 @@
 
   a {
     text-decoration: none;
-    color: $base-font-color;
+    color: $primary-color;
 
     &:hover,
     &:focus,
     &:active {
-      color: $primary-color;
+      color: $secondary-color;
 
       &:after {
         opacity: 1;
@@ -42,19 +42,18 @@
     margin-bottom: 0px;
 
     .post-link {
-      font-size: 29px;   
+      font-size: 23px;  
+      @include media($max-tablet){
+        font-size: 29px;
+      } 
     }
   }
+}
 
   .post-meta {
-    opacity: .7;
+    opacity: .5;
     font-size: .8rem;
   }
-
-  &:last-child {
-    border: none;
-  }
-}
 
   .pagination{
     text-align:center;
@@ -62,47 +61,42 @@
 
 
 .post{
+  padding-top: 40px;
+  padding-bottom: $base-spacing;
+
   .post-title{
-    padding-top: 30px;
+    padding-top: $base-spacing;
 
     .title{
       font-weight: bold;
       font-size: 29px;
     }  
-      
-    .post-info {
-      opacity: 0.7;
-
-      .share{
-        padding-top: 5px;
-
-        @include media($min-tablet) {
-          padding-top: 0px;
-        }
-
-        a{
-          color: $light-gray-color;
-          &:hover,
-          &:focus,
-          &:active {
-            color: $primary-color;
-          }
-        }
-      }   
-    }
   }
   .post-content{
-    padding-top: 25px;
-    padding-bottom: 40px;
+    padding-top: $base-spacing;
   }
+}
 
-  .post-nav{
-    padding-top: 10px;
-    padding-bottom: 30px;
 
+ .post-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: $base-spacing;
+  
+  @include media($min-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }  
+
+  p{
+    margin:0;
+
+  }
+  
     .prev, .next{
-      margin-bottom: 10px;
       max-width: 100%;
+      margin-bottom: $small-spacing;
 
       @include ellipsis();
 
@@ -111,15 +105,11 @@
       } 
     }
   }
-}
 
-#comments{
-  .container{
-    padding-top: 2em;
-    border-top: 1px solid #e6e6e6;
-  }
-}
 
+.post-list{
+  padding-bottom: $base-spacing;
+}
 
 
 

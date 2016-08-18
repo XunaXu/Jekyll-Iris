@@ -23,7 +23,7 @@ description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
 # Site settings
-url: https://xunaxu.github.io
+url: http://xunaxu.github.io
 baseurl: "/Jekyll-Iris"
 paginate_path: /page:num
 gems: [jekyll-paginate, jemoji]
@@ -38,9 +38,9 @@ loop-count: false # Set False for infinite loop, or set any number for finite lo
 type-speed: 10
 start-delay: 200
 delete-delay: 5000
-lines: # You can add HTML Tags in the Text
-  - text: "The best preparation for tomorrow is doing your best today."
-  - text: "The lower you fall, the higher you'll fly."
+lines: # Keep the <span> attribute on!
+  - text: "<span>The best preparation for tomorrow is doing your best today.</span>"
+  - text: "<span>The lower you fall, the higher you'll fly.</span>"
 
 
 
@@ -49,17 +49,21 @@ author:
   name      : Xuna Xu
   job       : Software Engineer
   email     : 78756e61@gmail.com
-  url       : http://xunaxu.com
+  url       : http://xunaxu.github.io3
   github    : http://github.com/xunaxu
   twitter   : http://twitter.com/xuna_x
   linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
 
-#google_analytics: UA-819232
+# google analytics
+google_analytics: UA-819232-** #### REPLACE ME ####
 #repo: http://github.com/xunaxu/jekyll-iris
 
 # comments
 comments: true
-disqus_shortname: "xunaxu"
+disqus_shortname: "xunaxu" #### REPLACE ME ####
+
+# subscribe
+subscribe: true  #### REPLACE SUBSCRIBE.HTML in source/_includes ####
 
 #share
 email-share: true
@@ -70,5 +74,3 @@ reddit-share: false
 google-plus-share: true
 tumblr-share: false
 pinterest-share: false
-pocket-share: false
-vkontakte-share: false

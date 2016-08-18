@@ -1,55 +1,40 @@
-$icons-family: 'dotx-icons';
+/* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ * Only selections icons which are in use for this website
+ */
 $icons-path: '../fonts/';
-$icon-home: "\e900";
-$icon-comments: "\e902";
-$icon-comment-o: "\e903";
-$icon-comments-o: "\e904";
-$icon-search: "\e906";
-$icon-share: "\e909";
-$icon-google-plus: "\e901";
-$icon-facebook: "\e90a";
-$icon-facebook-rounded: "\e90b";
-$icon-twitter: "\e90c";
-$icon-twitter-rounded: "\e90d";
-$icon-feed: "\e90e";
-$icon-github: "\e90f";
-$icon-linkedin: "\e905";
 
 @font-face {
-  font-family: $icons-family;
-  src:url('#{$icons-path}#{$icons-family}.eot?vs69d0');
-  src:url('#{$icons-path}#{$icons-family}.eot?vs69d0#iefix') format('embedded-opentype'),
-      url('#{$icons-path}#{$icons-family}.ttf?vs69d0') format('truetype'),
-      url('#{$icons-path}#{$icons-family}.woff?vs69d0') format('woff'),
-      url('#{$icons-path}#{$icons-family}.svg?vs69d0#dotx-icons') format('svg');
+  font-family: "foundation-icons";
+  src: url("#{$icons-path}foundation-icons.eot");
+  src: url("#{$icons-path}foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("#{$icons-path}foundation-icons.woff") format("woff"),
+       url("#{$icons-path}foundation-icons.ttf") format("truetype"),
+       url("#{$icons-path}foundation-icons.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 .icon {
-  font-family: $icons-family !important;
-  speak: none;
+  font-family: "foundation-icons";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  text-decoration: inherit;
 }
 
-.icon-home:before { content: $icon-home; }
-.icon-comments:before { content: $icon-comments; }
-.icon-comment-o:before { content: $icon-comment-o; }
-.icon-comments-o:before { content: $icon-comments-o; }
-.icon-search:before { content: $icon-search; }
-.icon-share:before { content: $icon-share; }
-.icon-google-plus:before { content: $icon-google-plus; }
-.icon-facebook:before { content: $icon-facebook; }
-.icon-facebook-rounded:before { content: $icon-facebook-rounded; }
-.icon-twitter:before { content: $icon-twitter; }
-.icon-twitter-rounded:before { content: $icon-twitter-rounded; }
-.icon-feed:before { content: $icon-feed; }
-.icon-github:before { content: $icon-github; }
-.icon-linkedin:before { content: $icon-linkedin; }
-
+.fi-social-github:before { content: "\f1c9"; }
+.fi-social-pinterest:before { content: "\f1d6"; }
+.fi-social-reddit:before { content: "\f1d8"; }
+.fi-social-google-plus:before { content: "\f1ca"; }
+.fi-social-tumblr:before { content: "\f1e3"; }
+.fi-social-linkedin:before { content: "\f1d0"; }
+.fi-social-facebook:before { content: "\f1c4"; }
+.fi-social-twitter:before { content: "\f1e4"; }
+.fi-at-sign:before { content: "\f113"; }

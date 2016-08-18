@@ -32,20 +32,24 @@ $base-z-index: 0;
 // Colors
 //
 $primary-color: #7E57C2;
-$highlight-color: #F48FB1;
-$white-color: #fff;
+$secondary-color: #F48FB1;
+$light-primary-color: lighten($primary-color, 40%);
+$light-secondary-color: lighten($secondary-color, 20%);
+
 $black-color: #000;
-$blue-color: #477dca;
 $dark-gray-color: lighten($black-color, 20%);
 $medium-gray-color: lighten($dark-gray-color, 20%);
 $light-gray-color: lighten($medium-gray-color, 20%);
 $lighter-gray-color: lighten($light-gray-color, 20%);
 $dark-white-color: lighten($light-gray-color, 10%);
+$medium-white-color: lighten($dark-white-color, 20%);
+$light-white-color: lighten($medium-white-color, 5%);
+$white-color: #fff;
 
 // Font Colors
 //
 $base-font-color: $medium-gray-color;
-$action-color: $highlight-color;
+$action-color: $secondary-color;
 
 // Border
 //
