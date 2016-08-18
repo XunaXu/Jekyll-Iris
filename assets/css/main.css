@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -218,6 +217,12 @@ th {
   padding: 0;
 }
 
+.comments {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #f2f2f2;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -269,8 +274,8 @@ a {
   transition: color 150ms ease;
 }
 a.button_outline {
-  padding: 4px 7px;
-  border-radius: 5px;
+  padding: 3px 13px;
+  border-radius: 3px;
   border: 1px solid #7E57C2;
   white-space: nowrap;
 }
@@ -281,12 +286,6 @@ a:active, a:focus, a:hover {
   text-decoration: none;
   color: #F48FB1;
   border-color: #F48FB1;
-}
-
-with-border {
-  border: 1px solid #7E57C2;
-  padding: 5px;
-  border-radius: 5px;
 }
 
 input, button, select, textarea {
@@ -336,13 +335,6 @@ pre code {
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-
 html {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
@@ -359,23 +351,10 @@ body {
   margin-right: auto;
 }
 
-.site-footer::after,
 .clearfix::after {
   clear: both;
   content: "";
   display: table;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-@media screen and (min-width: 768px) {
-  .flex-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
 .social li {
@@ -388,15 +367,23 @@ body {
   transition: opacity 0.15s ease-in-out;
   color: #666666;
   text-decoration: none;
-  opacity: .5;
+  color: #7E57C2;
 }
 .social a:hover, .social a:focus, .social a:active {
-  opacity: 1;
+  color: #F48FB1;
 }
 .social .icon {
-  font-size: 1.2rem;
+  font-size: 1.7em;
 }
 
+@media screen and (max-width: 769px) {
+  .social li {
+    margin-right: 15px;
+  }
+  .social .icon {
+    font-size: 1.8em;
+  }
+}
 body.home-intro {
   width: 100%;
   display: table;
@@ -432,7 +419,7 @@ body.home-intro .intro {
   max-width: 1224px;
   margin: auto;
   padding: 4em 0em;
-  min-height: 220px;
+  min-height: 200px;
 }
 @media screen and (min-width: 768px) {
   .intro-in {
@@ -536,6 +523,8 @@ body.home-intro .intro {
 }
 .site-header.with-background {
   background-color: #7E57C2;
+  position: fixed;
+  width: 100%;
 }
 .site-header.with-background a {
   color: #fff;
@@ -576,13 +565,13 @@ body.home-intro .intro {
 .post-title a,
 .post-meta a {
   text-decoration: none;
-  color: #666666;
+  color: #7E57C2;
 }
 .post-title a:hover, .post-title a:focus, .post-title a:active,
 .post-meta a:hover,
 .post-meta a:focus,
 .post-meta a:active {
-  color: #7E57C2;
+  color: #F48FB1;
 }
 .post-title a:hover:after, .post-title a:focus:after, .post-title a:active:after,
 .post-meta a:hover:after,
@@ -608,68 +597,68 @@ body.home-intro .intro {
   margin-bottom: 0px;
 }
 .post-item .post-title .post-link {
-  font-size: 29px;
+  font-size: 23px;
 }
-.post-item .post-meta {
-  opacity: .7;
+@media screen and (max-width: 769px) {
+  .post-item .post-title .post-link {
+    font-size: 29px;
+  }
+}
+
+.post-meta {
+  opacity: .5;
   font-size: .8rem;
-}
-.post-item:last-child {
-  border: none;
 }
 
 .pagination {
   text-align: center;
 }
 
+.post {
+  padding-top: 40px;
+  padding-bottom: 2em;
+}
 .post .post-title {
-  padding-top: 30px;
+  padding-top: 2em;
 }
 .post .post-title .title {
   font-weight: bold;
   font-size: 29px;
 }
-.post .post-title .post-info {
-  opacity: 0.7;
+.post .post-content {
+  padding-top: 2em;
 }
-.post .post-title .post-info .share {
-  padding-top: 5px;
+
+.post-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 2em;
 }
 @media screen and (min-width: 768px) {
-  .post .post-title .post-info .share {
-    padding-top: 0px;
+  .post-nav {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
-.post .post-title .post-info .share a {
-  color: #999999;
+.post-nav p {
+  margin: 0;
 }
-.post .post-title .post-info .share a:hover, .post .post-title .post-info .share a:focus, .post .post-title .post-info .share a:active {
-  color: #7E57C2;
-}
-.post .post-content {
-  padding-top: 25px;
-  padding-bottom: 40px;
-}
-.post .post-nav {
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-.post .post-nav .prev, .post .post-nav .next {
-  margin-bottom: 10px;
+.post-nav .prev, .post-nav .next {
   max-width: 100%;
+  margin-bottom: 1em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 @media screen and (min-width: 768px) {
-  .post .post-nav .prev, .post .post-nav .next {
+  .post-nav .prev, .post-nav .next {
     max-width: 48%;
   }
 }
 
-#comments .container {
-  padding-top: 2em;
-  border-top: 1px solid #e6e6e6;
+.post-list {
+  padding-bottom: 2em;
 }
 
 /**
@@ -913,115 +902,97 @@ body.home-intro .intro {
 }
 
 .site-footer {
+  flex-direction: row;
+  justify-content: space-between;
   padding: 2em 0;
   text-align: center;
+  border-top: 1px solid #e6e6e6;
 }
-.site-footer .container {
-  padding-top: 2em;
-  border-top: 1px solid #d9d9d9;
+.site-footer .social .icon {
+  font-size: 1.4em;
 }
-.site-footer p {
-  margin-bottom: 5px;
-}
-.site-footer .social {
-  padding-top: 5px;
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 769px) {
+  .site-footer .social .social .icon {
+    font-size: 1.5em;
+  }
 }
 
-.social li {
-  display: inline-block;
-  margin-right: 12px;
-}
-.social li:last-child {
-  margin-right: 0px;
-}
-.social a {
-  -webkit-transition: color 0.15s ease-in-out;
-  -moz-transition: color 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out;
-  text-decoration: none;
-  color: #7E57C2;
-  opacity: 1;
-}
-.social a:hover, .social a:focus, .social a:active {
-  color: #F48FB1;
-}
-.social .icon {
-  font-size: 1.2rem;
-}
-
+/* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ * Only selections icons which are in use for this website
+ */
 @font-face {
-  font-family: "dotx-icons";
-  src: url("../fonts/dotx-icons.eot?vs69d0");
-  src: url("../fonts/dotx-icons.eot?vs69d0#iefix") format("embedded-opentype"), url("../fonts/dotx-icons.ttf?vs69d0") format("truetype"), url("../fonts/dotx-icons.woff?vs69d0") format("woff"), url("../fonts/dotx-icons.svg?vs69d0#dotx-icons") format("svg");
+  font-family: "foundation-icons";
+  src: url("../fonts/foundation-icons.eot");
+  src: url("../fonts/foundation-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/foundation-icons.woff") format("woff"), url("../fonts/foundation-icons.ttf") format("truetype"), url("../fonts/foundation-icons.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 .icon {
-  font-family: "dotx-icons" !important;
-  speak: none;
+  font-family: "foundation-icons";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  text-decoration: inherit;
 }
 
-.icon-home:before {
-  content: "";
+.fi-social-github:before {
+  content: "\f1c9";
 }
 
-.icon-comments:before {
-  content: "";
+.fi-social-pinterest:before {
+  content: "\f1d6";
 }
 
-.icon-comment-o:before {
-  content: "";
+.fi-social-reddit:before {
+  content: "\f1d8";
 }
 
-.icon-comments-o:before {
-  content: "";
+.fi-social-google-plus:before {
+  content: "\f1ca";
 }
 
-.icon-search:before {
-  content: "";
+.fi-social-tumblr:before {
+  content: "\f1e3";
 }
 
-.icon-share:before {
-  content: "";
+.fi-social-linkedin:before {
+  content: "\f1d0";
 }
 
-.icon-google-plus:before {
-  content: "";
+.fi-social-facebook:before {
+  content: "\f1c4";
 }
 
-.icon-facebook:before {
-  content: "";
+.fi-social-twitter:before {
+  content: "\f1e4";
 }
 
-.icon-facebook-rounded:before {
-  content: "";
+.fi-at-sign:before {
+  content: "\f113";
 }
 
-.icon-twitter:before {
-  content: "";
+.subscribe {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 2em;
+}
+.subscribe #mc_embed_signup .button {
+  background-color: #7E57C2;
+}
+.subscribe #mc_embed_signup .button:hover, .subscribe #mc_embed_signup .button:focus, .subscribe #mc_embed_signup .button:active {
+  background-color: #F48FB1;
 }
 
-.icon-twitter-rounded:before {
-  content: "";
-}
-
-.icon-feed:before {
-  content: "";
-}
-
-.icon-github:before {
-  content: "";
-}
-
-.icon-linkedin:before {
-  content: "";
+.share {
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+  padding-top: 2em;
 }
