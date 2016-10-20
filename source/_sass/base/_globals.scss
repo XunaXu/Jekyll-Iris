@@ -25,6 +25,10 @@ body {
   };
 }
 
+.center{
+  text-align: center;
+}
+
 %clearfix,
 .clearfix {
   @include clearfix;

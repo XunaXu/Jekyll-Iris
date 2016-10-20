@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About
+layout: about
+title: About Me
 subtitle: It's Free!
 permalink: /about/
 ---

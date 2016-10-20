@@ -1,4 +1,5 @@
-{% if page.url == "/" | prepend: {{site.baseurl}} or page.url contains "page" %}
+{% comment %} {{ page.url | inspect }} {% endcomment %}
+{% if page.url == {{ '/' | prepend: site.baseurl }} or page.url contains "/page" or page.url == '/index.html' %}
 <header class="site-header container">
     <a class="site-title" href="{{ site.baseurl }}/"><strong>{{ site.title }}</strong></a>
 

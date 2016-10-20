@@ -26,7 +26,7 @@ $heading-line-height: 1.2;
 $base-border-radius: 3px;
 $base-spacing: 2em;
 $small-spacing: $base-spacing / 2;
-$mini-spacing: $base-spacing / 4;
+$mini-spacing: $base-spacing / 6;
 $base-z-index: 0;
 
 // Colors
@@ -35,6 +35,7 @@ $primary-color: #7E57C2;
 $secondary-color: #F48FB1;
 $light-primary-color: lighten($primary-color, 40%);
 $light-secondary-color: lighten($secondary-color, 20%);
+$dark-primary-color: darken($primary-color, 40%);
 
 $black-color: #000;
 $dark-gray-color: lighten($black-color, 20%);

@@ -13,8 +13,8 @@ sass:
 
 # permalink and highlighter
 permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : pygments
+markdown    : kramdown  #define which markdown you wanna to use for your site.
+highlighter : pygments  #define which lighlighter you wanna to use for your code section.
 
 
 # SEO settings
@@ -26,7 +26,7 @@ keywords: "Jekyll, theme, free, download, SEO, blog, web"
 url: http://xunaxu.github.io
 baseurl: "/Jekyll-Iris"
 paginate_path: /page:num
-gems: [jekyll-paginate, jemoji]
+gems: [jekyll-paginate]
 paginate: 2
 
 
@@ -40,7 +40,7 @@ start-delay: 200
 delete-delay: 5000
 lines: # Keep the <span> attribute on!
   - text: "<span>The best preparation for tomorrow is doing your best today.</span>"
-  - text: "<span>The lower you fall, the higher you'll fly.</span>"
+  - text: "<span>without documentation and test cases, your master pecie is not only your own graveyard, but also bury whoever comes cross. - xunaxu</span>"
 
 
 
@@ -49,21 +49,23 @@ author:
   name      : Xuna Xu
   job       : Software Engineer
   email     : 78756e61@gmail.com
-  url       : http://xunaxu.github.io3
+  url       : http://xunaxu.github.io
   github    : http://github.com/xunaxu
   twitter   : http://twitter.com/xuna_x
   linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
+  avatar    : /assets/images/avatar.JPG
 
 # google analytics
-google_analytics: UA-819232-** #### REPLACE ME ####
+google_analytics: UA-819232-** #### REPLACE ME, register your google analytics account if you don't have one ####
 #repo: http://github.com/xunaxu/jekyll-iris
 
 # comments
-comments: true
-disqus_shortname: "xunaxu" #### REPLACE ME ####
+comments: true 
+disqus_shortname: "xunaxu" #### REPLACE ME, register your account at disqus if you don't have one ####
 
 # subscribe
-subscribe: true  #### REPLACE SUBSCRIBE.HTML in source/_includes ####
+subscribe: true  
+#### REPLACE SUBSCRIBE.HTML in source/_includes, so you can put your own mail chimps subscribe form in####
 
 #share
 email-share: true
