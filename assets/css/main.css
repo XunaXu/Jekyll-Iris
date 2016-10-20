@@ -217,6 +217,56 @@ th {
   padding: 0;
 }
 
+button, input[type="button"], input[type="reset"], input[type="submit"],
+.button {
+  appearance: none;
+  background-color: #7E57C2;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.33333em 1em;
+  text-decoration: none;
+  -webkit-transition: background-color 150ms ease;
+  -moz-transition: background-color 150ms ease;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
+.button:hover,
+.button:focus {
+  background-color: #65469b;
+  color: #fff;
+}
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover,
+.button:disabled:hover {
+  background-color: #7E57C2;
+}
+button.button-ghost, input[type="button"].button-ghost, input[type="reset"].button-ghost, input[type="submit"].button-ghost,
+.button.button-ghost {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+button.button-ghost:hover, button.button-ghost:focus, button.button-ghost:active, input[type="button"].button-ghost:hover, input[type="button"].button-ghost:focus, input[type="button"].button-ghost:active, input[type="reset"].button-ghost:hover, input[type="reset"].button-ghost:focus, input[type="reset"].button-ghost:active, input[type="submit"].button-ghost:hover, input[type="submit"].button-ghost:focus, input[type="submit"].button-ghost:active,
+.button.button-ghost:hover,
+.button.button-ghost:focus,
+.button.button-ghost:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .comments {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -274,7 +324,7 @@ a {
   transition: color 150ms ease;
 }
 a.button_outline {
-  padding: 3px 13px;
+  padding: 0.33333em 1em;
   border-radius: 3px;
   border: 1px solid #7E57C2;
   white-space: nowrap;
@@ -349,6 +399,10 @@ body {
   padding-right: 1em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.center {
+  text-align: center;
 }
 
 .clearfix::after {
@@ -661,6 +715,36 @@ body.home-intro .intro {
   padding-bottom: 2em;
 }
 
+.circle-avatar {
+  line-height: 0;
+  /* remove line-height */
+  display: inline-block;
+  /* circle wraps image */
+  margin: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  /* relative value */
+  box-shadow: 0px 0px 5px #7E57C2;
+  transition: linear 0.25s;
+  max-width: 120px;
+  max-height: 120px;
+}
+.circle-avatar img {
+  border-radius: 50%;
+  /* relative value for adjustable image size */
+}
+.circle-avatar:hover {
+  transition: ease-out 0.2s;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  -webkit-transition: ease-out 0.2s;
+  box-shadow: 0px 0px 5px #F48FB1;
+}
+
+a.circle-avatar {
+  color: transparent;
+}
+
+/* IE fix: removes blue border */
 /**
  * Syntax highlighting styles
  */
@@ -907,6 +991,7 @@ body.home-intro .intro {
   padding: 2em 0;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+  color: #666666;
 }
 .site-footer .social .icon {
   font-size: 1.4em;
