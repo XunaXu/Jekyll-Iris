@@ -275,9 +275,7 @@ button.button-ghost:hover, button.button-ghost:focus, button.button-ghost:active
 
 ul,
 ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 1em;
 }
 dl {
   margin-bottom: 1em;
@@ -359,20 +357,29 @@ picture {
 }
 
 pre {
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border: 1px solid #d9d9d9;
   padding: 10px;
   margin: 10px 0;
   background-color: #f9f9f9;
 }
 pre code {
+  border: none;
+}
+
+code {
   margin: 0;
   padding: 0 5px;
   font-family: Consolas, Monaco, monospace;
   font-size: 0.7rem;
+  border: none;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  display: block;
 }
 @media screen and (max-width: 769px) {
-  pre code {
+  code {
     font-size: 0.9rem;
   }
 }
@@ -575,16 +582,16 @@ body.home-intro .intro {
 .site-header .site-title {
   font-size: 20px;
 }
-.site-header.with-background {
+.site-header.sticky {
   background-color: #7E57C2;
   position: fixed;
   width: 100%;
 }
-.site-header.with-background a {
+.site-header.sticky a {
   color: #fff;
   border-color: #fff;
 }
-.site-header.with-background a:hover {
+.site-header.sticky a:hover {
   color: #F48FB1;
   border-color: #F48FB1;
 }
@@ -660,7 +667,7 @@ body.home-intro .intro {
 }
 
 .post-meta {
-  opacity: .5;
+  opacity: .8;
   font-size: .8rem;
 }
 
@@ -673,11 +680,21 @@ body.home-intro .intro {
   padding-bottom: 2em;
 }
 .post .post-title {
-  padding-top: 2em;
+  color: #333333;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+@media screen and (max-width: 769px) {
+  .post .post-title {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
 }
 .post .post-title .title {
   font-weight: bold;
-  font-size: 29px;
+  font-size: 32px;
 }
 .post .post-content {
   padding-top: 2em;
@@ -745,6 +762,14 @@ a.circle-avatar {
 }
 
 /* IE fix: removes blue border */
+.post-social {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /**
  * Syntax highlighting styles
  */
@@ -1064,9 +1089,7 @@ a.circle-avatar {
 }
 
 .subscribe {
-  width: 100%;
-  border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 2em;
+  padding: 0;
 }
 .subscribe #mc_embed_signup .button {
   background-color: #7E57C2;
@@ -1075,9 +1098,7 @@ a.circle-avatar {
   background-color: #F48FB1;
 }
 
-.share {
-  width: 100%;
-  border-top: 1px solid #e6e6e6;
-  text-align: center;
-  padding-top: 2em;
+.share ul {
+  margin: 0;
+  padding: 10px 0;
 }

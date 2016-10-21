@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>How to set up your blog using Github and Jekyll</title>
-  <meta name="description" content="Step 1: Get a jekyll themeYou can Download or clone repo Jekyll Iris git clone https://github.com/XunaXu/Jeykll-Iris.git or find a theme you like from Jekyll...">
+  <meta name="description" content="Step 1: Get a jekyll themeYou can Download or clone repo Jekyll Iris git clone https://github.com/XunaXu/Jeykll-Iris.gitor find a theme you like from Jekyll ...">
 
   <link rel="stylesheet" href="/Jekyll-Iris/assets/css/main.css">
   <link rel="canonical" href="http://xunaxu.github.io/Jekyll-Iris/How to set up your blog using Github and Jekyll">
@@ -20,7 +20,7 @@
 
     
 
-<header class="site-header with-background">
+<header class="site-header sticky">
 	<div class="container">
     <a class="site-title" href="/Jekyll-Iris/"><strong>Xuna Xu</strong></a>
 
@@ -47,186 +47,15 @@
 </header>
 
 
-
-
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-   <div class="post-title container">
+   <div class="post-title" style="background-image: url('/Jekyll-Iris/assets/images/bgImg6.jpg');
+">
+    <div class = "container">
     <div class="title">How to set up your blog using Github and Jekyll</div>
-      <div class="post-meta">Oct 21, 2016 &nbsp; | &nbsp; 4 Min Read &nbsp; | &nbsp; 
-       <span class="disqus-comment-count" data-disqus-identifier="How to set up your blog using Github and Jekyll"></span>
-      </div>
-   </div>
-
-  
-  <div class="post-content container" itemprop="articleBody">
-    <h2 id="step-1-get-a-jekyll-theme">Step 1: Get a jekyll theme</h2>
-<p>You can Download or clone repo Jekyll Iris <code>git clone https://github.com/XunaXu/Jeykll-Iris.git</code> 
-or find a theme you like from <a href="http://jekyllthemes.org/">Jekyll Theme website</a></p>
-
-<p><br /></p>
-
-<h2 id="step-2-a-quick-guide-for-jekyll-theme-using-jekyll-iris">Step 2: A quick guide for Jekyll Theme using Jekyll Iris</h2>
-
-<h3 id="configyml">_config.yml</h3>
-
-<p>This is a file with global variables. There are detailed comments to explain all variables in the actual file. Some variables are for toggle features on and off, some are for defining your disque account, your google analystic id. etc.  So Take a look at _config.yml file to begin with is a good start, and don’t forget to run ‘Jekyll Serve’ on the terminal if there are some change in this file.</p>
-
-<p>All global variable can be referred in your source file. such as Xuna Xu as an example.</p>
-
-<p><br /></p>
-
-<h3 id="source-folder">Source folder</h3>
-
-<p>Source folder is where you should do modificaions and put your posts in. It auto generates _site folder for you when the ‘jekyll serve’ command is runing. You do need to understand this folder if you want to customise your website. Here are basic explanations.</p>
-
-<p>Source folders has five folders, four private, one public.</p>
-
-<ul>
-  <li>
-    <h4 id="includes">_includes</h4>
-    <p>It divides a webpage into separated html sections: a build block for all pages.</p>
-
-    <ul>
-      <li>footer</li>
-      <li>header (nav bar in this case)</li>
-      <li>comments (for disque),</li>
-      <li>social (as social icons, your linked in, facebook, github accounts)</li>
-      <li>share (as allow other to share your posts via twiiter, google, etc)</li>
-      <li>subscribe ( mail chimp in this case)</li>
-      <li>scripts (All javescripts file links)</li>
-      <li>head (as &lt;head&gt; in html section)</li>
-    </ul>
-  </li>
-</ul>
-
-<p><br /></p>
-
-<ul>
-  <li>
-    <h4 id="layouts">_layouts</h4>
-    <p>Here are only two layouts defined, one for all post pages and about page. It requires html sections from _includes folder to build a webpage.</p>
-
-    <ul>
-      <li>default layout: a standard webpage with header and footer. it is used for other pages, such as about, index and post pages.</li>
-      <li>about layout: it is based on the post layout.</li>
-      <li>post layout: post layout which defines your blog post.</li>
-    </ul>
-  </li>
-</ul>
-
-<p><br /></p>
-
-<ul>
-  <li>
-    <h4 id="posts">_posts</h4>
-    <p>A folder containing markdown files for blog posts. This is the only folder you need to change once you are happy with the website functions and looks.</p>
-
-    <p>You need to define these variables on the top for each post.
-  * layout: post as an example, you refer any layout from _layout folder.
-  * title:  “Consectetuer adipiscing elit-1”
-  * permalink:  “consectetuer-adipiscing-elit-1” (this needs to be unique, it will become a part of the url)
-  * date: the post normally are sorted by the date in decent order
-  * categories: (it is not used here, but you can define tags to category your posts.)</p>
-  </li>
-</ul>
-
-<p><br /></p>
-
-<ul>
-  <li>
-    <h4 id="sass">_sass</h4>
-    <p>All your scss files for the site.</p>
-  </li>
-</ul>
-
-<p><br /></p>
-
-<ul>
-  <li>
-    <h4 id="assets">assets</h4>
-    <ul>
-      <li>js folder - Js libraries and packages you are using, copy and paste here.</li>
-      <li>fonts folder - we are using foundation here.</li>
-      <li>images folder - this is where put your avatar</li>
-      <li>css folder - it refers to _sass folder.</li>
-      <li>404 page</li>
-      <li>about page</li>
-      <li>index page</li>
-      <li>feed.xml  - not being used here.</li>
-    </ul>
-  </li>
-</ul>
-
-<p><br /></p>
-
-<h2 id="step-3--get-a-custom-domain-and-host-on-github">Step 3:  Get a custom domain and host on github</h2>
-
-<p>Now you have customised a local website running on your local pc. you may want to have your own web domain, such as www.xunaxu.com instead of xunaxu.github.io. Here is a youtube tutorial which helped me to set up my site.</p>
-
-<p><a href="https://www.youtube.com/watch?v=CJLb8UUIJPg">How to: Free Website Hosting + Custom Domain with Github Pages</a></p>
-
-<p><br /></p>
-
-<h2 id="step-4-production-and-deloy">Step 4: Production and Deloy</h2>
-<p>In the production, you probably don’t need base url as http://[your site]/Jekyll-Iris/. so in _config.yml, base url should be just empty.</p>
-
-<p>The deploy command lines should be like this below, just need to change the github repo to yours.</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>_site
-git init
-git add --all
-git commit -m <span class="s2">&quot;Deploy to GitHub Pages&quot;</span>
-git push --force --quiet <span class="s2">&quot;https://github.com/yourName/your.git&quot;</span> master:gh-pages</code></pre></div>
-
-<p><br /></p>
-
-<hr />
-
-<h3 id="debugging-tips">Debugging Tips</h3>
-
-<ul>
-  <li>Printing out variables using inspect</li>
-</ul>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="se">\{\{</span> page.url <span class="p">|</span> inspect <span class="se">\}\}</span></code></pre></div>
-
-<ul>
-  <li>Commenting</li>
-</ul>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="se">\{\%</span> comment <span class="se">\%\}</span>
-	...adfasdf..
-<span class="se">\{\%</span> endcomment <span class="se">\%\}</span></code></pre></div>
-
-<p><br /></p>
-
-<h3 id="usefull-links">Usefull Links</h3>
-
-<p><a href="https://jekyllrb.com/docs/quickstart/">The official Jekyll documenation</a> is highly recommend to have a look.</p>
-
-<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown cheatsheet</a> is always handy.</p>
-
-  </div>
-
-</article>
-
- 
-  <div class="post-nav container">
-    
-      <p></p>
-    
-
-      
-      <a class="next button_outline" href="/Jekyll-Iris/consectetuer-adipiscing-elit-2"><span>&raquo;&nbsp; Next: Consectetuer adipiscing elit-2</span>
-      </a>
-     
-  </div>
- 
-
-<!-- Share Buttons Start -->
+    <div class = "post-social">
+    <!-- Share Buttons Start -->
 <div class='share'>
-  <div class="container">
   <ul class="social clearfix">
     
       <li class="rrssb-email">
@@ -268,22 +97,20 @@ git push --force --quiet <span class="s2">&quot;https://github.com/yourName/your
     
     
   </ul>
-  </div>
 </div>
 <!-- Share Buttons End -->
 
-
+    
 
 <!-- Subscribe start -->
 <div class="subscribe">
-<div class="container">
 
 <!-- REPLACE ME AND FOLLOW THIS LINK http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website -->
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+    #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
@@ -300,8 +127,164 @@ git push --force --quiet <span class="s2">&quot;https://github.com/yourName/your
 
 <!--End mc_embed_signup-->
 </div>
-</div>
 <!-- Subscibe End-->
+
+
+   </div>
+      <div class="post-meta">Oct 21, 2016 &nbsp; | &nbsp; 4 Min Read &nbsp; | &nbsp;
+       <span class="disqus-comment-count" data-disqus-identifier="How to set up your blog using Github and Jekyll"></span>
+      </div>
+    </div>
+   </div>
+
+
+
+  <div class="post-content container" itemprop="articleBody">
+    <h2 id="step-1-get-a-jekyll-theme">Step 1: Get a jekyll theme</h2>
+<p>You can Download or clone repo Jekyll Iris <code>git clone https://github.com/XunaXu/Jeykll-Iris.git</code>
+or find a theme you like from <a href="http://jekyllthemes.org/">Jekyll Theme website</a></p>
+
+<p><br /></p>
+
+<h2 id="step-2-a-quick-guide-for-jekyll-using-jekyll-iris">Step 2: A quick guide for Jekyll using Jekyll Iris</h2>
+
+<h3 id="configyml">_config.yml</h3>
+
+<p>This is a file with global variables. There are detailed comments to explain all variables in the actual file. Some variables are for toggle features on and off, some are for defining your disqus account, your google analytics id. etc.  So Take a look at _config.yml file to begin with is a good start, and don’t forget to run <code>Jekyll Serve</code> on the terminal if there are some change in this file.</p>
+
+<p>All global variable can be referred in your source file, here is an example. <code>\{\{site.author.name\}\}</code></p>
+
+<p><br /></p>
+
+<h3 id="source-folder">Source folder</h3>
+
+<p>Source folder is where you should do modifications and put your posts in. It auto generates _site folder for you when the ‘jekyll serve’ command is runing. You do need to understand this folder if you want to customise your website. Here are basic explanations.</p>
+
+<p>Source folders has five folders, four private, one public.</p>
+
+<ul>
+  <li>
+    <h4 id="includes">_includes</h4>
+    <p>It divides a webpage into separated html sections: a build block for all pages.</p>
+    <ul>
+      <li>footer</li>
+      <li>header (nav bar in this case)</li>
+      <li>comments (for disqus),</li>
+      <li>social (as social icons, your linked in, facebook, github accounts)</li>
+      <li>share (as allow other to share your posts via twitter, google, etc)</li>
+      <li>subscribe ( mail chimp in this case)</li>
+      <li>scripts (All javascripts file links)</li>
+      <li>head (as &lt;head&gt; in html section)</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="layouts">_layouts</h4>
+    <p>Here are only two layouts defined, one for all post pages and about page. It requires html sections from _includes folder to build a webpage.</p>
+    <ul>
+      <li>default layout: a standard webpage with header and footer. it is used for other pages, such as about, index and post pages.</li>
+      <li>about layout: it is based on the post layout.</li>
+      <li>post layout: post layout which defines your blog post.</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="posts">_posts</h4>
+    <p>A folder containing markdown files for blog posts. This is the only folder you need to change once you are happy with the website functions and looks. You need to define these variables on the top for each post.</p>
+    <ul>
+      <li>layout: post as an example, you refer any layout from _layout folder.</li>
+      <li>title:  “Consectetuer adipiscing elit-1”</li>
+      <li>permalink:  “consectetuer-adipiscing-elit-1” (this needs to be unique, it will become a part of the url)</li>
+      <li>date: the post normally are sorted by the date in decent order</li>
+      <li>categories: (it is not used here, but you can define tags to category your posts.)</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="sass">_sass</h4>
+    <p>It has all scss files for the site. Your cool makedown style and unique website looks are beginning from here.</p>
+  </li>
+  <li>
+    <h4 id="assets">assets</h4>
+    <ul>
+      <li>js folder - Js libraries and packages you are using, copy and paste here.</li>
+      <li>fonts folder - we are using foundation here.</li>
+      <li>images folder - this is where put your avatar</li>
+      <li>css folder - it refers to _sass folder.</li>
+      <li>404 page</li>
+      <li>about page</li>
+      <li>index page</li>
+      <li>feed.xml  - not being used here.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="step-3--get-a-custom-domain-and-host-on-github">Step 3:  Get a custom domain and host on github</h2>
+
+<p>Now you have customised a local website running on your local pc. you may want to have your own web domain, such as www.xunaxu.com instead of xunaxu.github.io. Here is a youtube tutorial which helped me to set up my site.</p>
+
+<p><a href="https://www.youtube.com/watch?v=CJLb8UUIJPg">How to: Free Website Hosting + Custom Domain with Github Pages</a></p>
+
+<p><br /></p>
+
+<h2 id="step-4-production-and-deployment">Step 4: Production and Deployment</h2>
+<p>In the production, you probably don’t need a base url as http://[your site]/Jekyll-Iris/. so base url in _config.yml should be empty.</p>
+
+<p>The deploy command lines are below, you just need to change the github repo to yours.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>_site
+git init
+git add --all
+git commit -m <span class="s2">&quot;Deploy to GitHub Pages&quot;</span>
+git push --force --quiet <span class="s2">&quot;https://github.com/yourAccountName/your.git&quot;</span> master:gh-pages</code></pre></div>
+
+<p><br /></p>
+
+<hr />
+
+<h3 id="useful-tips">Useful Tips</h3>
+
+<ul>
+  <li>
+    <p>Debugging: Printing out variables using inspect
+<code>
+\{\{ page.url | inspect \}\}
+</code></p>
+  </li>
+  <li>
+    <p>Commenting
+<code>
+\{\% comment \%\}
+  ...adfasdf..
+\{\% endcomment \%\}
+</code></p>
+  </li>
+  <li>
+    <p>Links</p>
+    <ul>
+      <li><a href="https://jekyllrb.com/docs/quickstart/">The official Jekyll documentation</a> is highly recommend to have a look.</li>
+      <li><a href="https://guides.github.com/features/mastering-markdown/">Markdown Guide</a> is always handy.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+  </div>
+
+</article>
+
+
+  <div class="post-nav container">
+    
+      <p></p>
+    
+
+    
+      <a class="next button_outline" href="/Jekyll-Iris/consectetuer-adipiscing-elit-2"><span>&raquo;&nbsp; Next: Consectetuer adipiscing elit-2</span>
+      </a>
+    
+  </div>
+
 
 
 
@@ -332,8 +315,6 @@ var disqus_config = function () {
   
 
 
-
-
     <footer class="site-footer">
   <div class="container flex-container">
     
@@ -360,7 +341,7 @@ var disqus_config = function () {
   
     myQuotes.push("<span>The best preparation for tomorrow is doing your best today.</span>");
   
-    myQuotes.push("<span>without documentation and test cases, your master pecie is not only your own graveyard, but also bury whoever comes cross. - xunaxu</span>");
+    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is not only my own graveyard, but also bury whoever comes cross. - xunaxu</span>");
   
 
     $(".intro-post-title").typed({
