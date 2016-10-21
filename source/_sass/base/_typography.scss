@@ -22,25 +22,25 @@ h6 {
 }
 
 p {
-  margin: 0 0 $small-spacing;  
+  margin: 0 0 $small-spacing;
 }
 
 a {
   color: $primary-color;
   text-decoration: none;
   transition: color $base-duration $base-timing;
-  
+
   &.button_outline{
     padding: $mini-spacing $small-spacing;
     border-radius: $base-border-radius;
     border: 1px solid $primary-color;
     white-space: nowrap;
-  } 
+  }
 
   &.italic{
     font-style: italic;
   }
-  
+
   &:active,
   &:focus,
   &:hover {
@@ -72,21 +72,30 @@ picture {
 
 
 pre {
-  border-top: $base-border;
-  border-bottom: $base-border;
+  border: $base-border;
   padding: 10px;
   margin: 10px 0;
   background-color: #f9f9f9;
+  
+  code{
+    border: none;
+  }
+}
 
-  code {
-    margin: 0;
-    padding: 0 5px;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 0.7rem;
+code {
+  margin: 0;
+  padding: 0 5px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.7rem;
+  border: none;
+  border: $base-border;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  display: block;
 
-    @include media($max-tablet) {
-      font-size: 0.9rem;
-    }
+  @include media($max-tablet) {
+    font-size: 0.9rem;
   }
 }
 

@@ -8,11 +8,11 @@
     font-size: 20px;
   }
 
-  &.with-background{
+  &.sticky{
     background-color: $primary-color;
     position: fixed;
     width: 100%;
-    
+
     a{
       color: $white-color;
       border-color: $white-color;

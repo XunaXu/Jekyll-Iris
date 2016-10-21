@@ -1,11 +1,12 @@
 .subscribe{
-  width: 100%;
-  border-bottom: 1px solid $medium-white-color;
-  padding-bottom: $base-spacing;
+  // width: 100%;
+  // border-bottom: 1px solid $medium-white-color;
+  // padding-bottom: $base-spacing;
+  padding: 0;
 
 	 #mc_embed_signup{
 	 	.button{
-	 		      background-color: $primary-color;
+	 		  background-color: $primary-color;
 
 	 	&:hover,
 	    &:focus,
@@ -15,4 +16,3 @@
 	 	}
 	}
 }
-

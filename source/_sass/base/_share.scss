@@ -1,6 +1,11 @@
 .share{
-  width: 100%;
-  border-top: 1px solid $medium-white-color;
-  text-align: center;
-  padding-top: $base-spacing;
+  // width: 100%;
+  // border-top: 1px solid $medium-white-color;
+  // text-align: center;
+  // padding-top: $base-spacing;
+
+      ul{
+        margin:0;
+        padding: 10px 0;
+      }
 }

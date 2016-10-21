@@ -30,7 +30,7 @@ gems: [jekyll-paginate]
 paginate: 2
 
 
-# Dynamic Text on the Header 
+# Dynamic Text on the Header
 dynamic-typing: true
 shuffle: true # Shuffle the lines.
 loop: true
@@ -40,7 +40,7 @@ start-delay: 200
 delete-delay: 5000
 lines: # Keep the <span> attribute on!
   - text: "<span>The best preparation for tomorrow is doing your best today.</span>"
-  - text: "<span>without documentation and test cases, your master pecie is not only your own graveyard, but also bury whoever comes cross. - xunaxu</span>"
+  - text: "<span>Without documentation and test cases, my 'masterpiece' is not only my own graveyard, but also bury whoever comes cross. - xunaxu</span>"
 
 
 
@@ -60,11 +60,11 @@ google_analytics: UA-819232-** #### REPLACE ME, register your google analytics a
 #repo: http://github.com/xunaxu/jekyll-iris
 
 # comments
-comments: true 
+comments: true
 disqus_shortname: "xunaxu" #### REPLACE ME, register your account at disqus if you don't have one ####
 
 # subscribe
-subscribe: true  
+subscribe: true
 #### REPLACE SUBSCRIBE.HTML in source/_includes, so you can put your own mail chimps subscribe form in####
 
 #share
