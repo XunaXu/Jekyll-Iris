@@ -4,15 +4,15 @@
 ### Features
 
 - Responsive, scale for tablets, mobiles and desktops
-- Dynamic Typed Messages for intro 
+- Dynamic Typed Messages for intro
 - Post Preview at home page
-- Estimated Reading Time 
+- Estimated Reading Time
 - Older and Newer Post Navigation at home page
 - Next and Prev Post Navigation for each blog
 - Share blogs via linked in, twitter, facebook etc.
 - Mail Chimps Subscribe Form.
-- Disqus Comments and Counts 
-- 404 not found page 
+- Disqus Comments and Counts
+- 404 not found page
 - Mobile friendly.
 - Good performance, fast loading.
 
@@ -32,7 +32,7 @@
 
 1. Download or clone repo `git clone https://github.com/XunaXu/Jeykll-Iris.git`
 2. Enter the folder: `cd Jekyll-Iris/`
-3. Start Jekyll server: `jekyll serve` 
+3. Start Jekyll server: `jekyll serve`
 4. Follow console log from the terminal
 
 Access, [http://127.0.0.1:4000/Jekyll-Iris/](http://127.0.0.1:4000/Jekyll-Iris/)
@@ -42,22 +42,22 @@ Access, [http://127.0.0.1:4000/Jekyll-Iris/](http://127.0.0.1:4000/Jekyll-Iris/)
 ### Customisation
 
 #### > Color Theme
-Change the color theme in the file located at "source/_sass/_variables.scss" 
+Change the color theme in the file located at "source/_sass/_variables.scss"
 ```
-$primary-color: #7E57C2; //as violet color in the demo 
+$primary-color: #7E57C2; //as violet color in the demo
 $highlight-color: #F48FB1; //as pink color in the demo
 ```
 
 #### > Google Analytics
-* replace google_analytics at _config.yml 
+* replace google_analytics at _config.yml
 * run jekyll serve to ensure changes in _config.yml are applied.
 
 #### > Disqus Comments
-* replace disqus_shortname at _config.yml 
+* replace disqus_shortname at _config.yml
 * run jekyll serve to ensure changes in _config.yml are applied.
 
 #### > Mail Chimps Subscribe Form
-* Go to source/_includes/subscribe.html 
+* Go to source/_includes/subscribe.html
 * [Follow this tutorial for mailchimps signup form](http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website)
 
 
@@ -79,4 +79,3 @@ $highlight-color: #F48FB1; //as pink color in the demo
 ### Copyright and license
 
 It is under [the MIT license](/LICENSE).
-

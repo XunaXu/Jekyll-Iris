@@ -34,6 +34,22 @@ body {
   @include clearfix;
 }
 
+.expand-div{
+  padding-bottom:$small-spacing;
+}
+.expandable[expanded="false"]{
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(opacity .15s ease-in);
+}
+.expandable[expanded="true"] {
+  height: auto;
+  visibility:visible;
+  opacity: 1;
+  @include transition(opacity .15s ease-out);
+}
+
 .social {
     li {
       display: inline-block;
@@ -56,15 +72,19 @@ body {
     .icon{
        font-size: 1.7em;
      }
-  }
+}
 
-   @include media($max-tablet){
+@include media($max-tablet){
     .social {
-    li {
-      margin-right: 15px;
-    }
+      li {
+        margin-right: 15px;
+      }
       .icon{
         font-size: 1.8em;
       }
-     }
-   }
+    }
+  }
+
+ p {
+     white-space: pre-wrap;
+ }

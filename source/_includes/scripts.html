@@ -16,7 +16,17 @@
       loop: {{ site..loop }},
       loopCount: {{ site.loop-count }},
       cursorChar: "|"
-    });    
+    });
+
+    $(".toggle-button").click(function(){
+      if($(this).text() === 'expand'){
+        $(this).text('collapse');
+        $(this).parent('div').find('.expandable').attr( "expanded", "true" );
+      }else{
+        $(this).text('expand');
+        $(this).parent('div').find('.expandable').attr( "expanded", "false" );
+      }
+    });
 </script>
 
 {% if site.google_analytics %}
@@ -35,4 +45,3 @@
 {% if site.comments %}
 <script id="dsq-count-scr" src="{{site.disqus_shortname | prepend:'//' | append: '.disqus.com/count.js'}}" async></script>
 {% endif %}
-

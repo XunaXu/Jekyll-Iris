@@ -22,6 +22,7 @@ title: Xuna Xu
 description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
+
 # Site settings
 url: http://xunaxu.github.io
 baseurl: "/Jekyll-Iris"
@@ -38,9 +39,9 @@ loop-count: false # Set False for infinite loop, or set any number for finite lo
 type-speed: 10
 start-delay: 200
 delete-delay: 5000
-lines: # Keep the <span> attribute on!
+lines: # Keep the <span> attribute on! It makes the text working when resizing the screen
   - text: "<span>The best preparation for tomorrow is doing your best today.</span>"
-  - text: "<span>Without documentation and test cases, my 'masterpiece' is not only my own graveyard, but also bury whoever comes cross. - xunaxu</span>"
+  - text: "<span>Without documentation and test cases, my 'masterpiece' is my own graveyard. - xunaxu</span>"
 
 
 
@@ -53,7 +54,7 @@ author:
   github    : http://github.com/xunaxu
   twitter   : http://twitter.com/xuna_x
   linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
-  avatar    : /assets/images/avatar.JPG
+  avatar    : /assets/images/avatar.jpg
 
 # google analytics
 google_analytics: UA-819232-** #### REPLACE ME, register your google analytics account if you don't have one ####
@@ -76,3 +77,7 @@ reddit-share: false
 google-plus-share: true
 tumblr-share: false
 pinterest-share: false
+
+##HACKs Really dont wanna type this all the time. Maybe mark down should include a syntax about expand and collapse.
+div-expand: <div class="expand-div">Having trouble? Have a look at my screen, it may help. <button class="toggle-button" >expand</button> <div class="expandable" expanded="false">
+end-div-expand: </div></div>

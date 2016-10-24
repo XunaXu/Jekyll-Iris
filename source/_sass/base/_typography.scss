@@ -76,7 +76,7 @@ pre {
   padding: 10px;
   margin: 10px 0;
   background-color: #f9f9f9;
-  
+
   code{
     border: none;
   }
@@ -93,6 +93,7 @@ code {
   margin: 10px 0;
   background-color: #f9f9f9;
   display: block;
+  white-space: pre-wrap;
 
   @include media($max-tablet) {
     font-size: 0.9rem;

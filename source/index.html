@@ -21,17 +21,17 @@ layout: default
         </div>
       </header>
 
-      <p>{{ post.content | strip_html | truncatewords: 56 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more button_outline">Read more</a></p>
+      <p>{{ post.content | strip_html | truncatewords: 56 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">Read more</a></p>
     </article>
   {% endfor %}
 
   <!-- Pagination links -->
   <div class="pagination container">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button_outline">Newer Posts</a> 
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button_outline">Newer Posts</a>
     {% endif %}
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button_outline">Older Posts</a>
     {% endif %}
   </div>
-</section> 
+</section>
