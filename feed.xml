@@ -5,15 +5,168 @@
     <description>A free Jekyll theme for download</description>
     <link>http://xunaxu.github.io/Jekyll-Iris/</link>
     <atom:link href="http://xunaxu.github.io/Jekyll-Iris/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Oct 2016 19:51:25 +1030</pubDate>
-    <lastBuildDate>Fri, 21 Oct 2016 19:51:25 +1030</lastBuildDate>
+    <pubDate>Tue, 25 Oct 2016 02:30:47 +1030</pubDate>
+    <lastBuildDate>Tue, 25 Oct 2016 02:30:47 +1030</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>How to set up your blog using Github and Jekyll</title>
-        <description>&lt;h2 id=&quot;step-1-get-a-jekyll-theme&quot;&gt;Step 1: Get a jekyll theme&lt;/h2&gt;
-&lt;p&gt;You can Download or clone repo Jekyll Iris &lt;code&gt;git clone https://github.com/XunaXu/Jeykll-Iris.git&lt;/code&gt;
-or find a theme you like from &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme website&lt;/a&gt;&lt;/p&gt;
+        <title>How to Set Up a Blog Site Using Jekyll and Github</title>
+        <description>&lt;p&gt;Here is a step by step guide to set up a Jekyll site and host on github as github pages. It covers from starting with a generic theme to deploying to github pages. Here we are using Jekyll Iris Theme as an example.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-setting-up-and-running-a-jekyll-site-locally&quot;&gt;Step 1: Setting Up and Running a Jekyll Site Locally&lt;/h2&gt;
+&lt;p&gt;You can clone Jekyll Iris theme by following commands below, or you can find a theme you like from &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme website&lt;/a&gt;
+&lt;code&gt;git clone http://github.com/XunaXu/Jeykll-Iris.git
+cd Jeykll-Iris
+bundle install
+jekyll serve
+&lt;/code&gt;
+Open a web broswer at this address: http://127.0.0.1:4000/Jekyll-Iris/&lt;/p&gt;
+
+&lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
+&lt;img src=&quot;/Jekyll-Iris/assets/images/setup_jekyll&quot; alt=&quot;Set up and run a jekyll theme&quot; /&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2-customising-the-site&quot;&gt;Step 2: Customising The Site&lt;/h2&gt;
+&lt;p&gt;Now you have a generic site up running, it it the time to make it yours.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;update-configyml&quot;&gt;Update _config.yml&lt;/h3&gt;
+    &lt;p&gt;Open the jekyll iris project using an IDE or whatever way you prefer. there is _config.yml located at on the top level of directory. There are a list of variables in _config.yml we need to change. &lt;em&gt;Any changes in this file requires to run ‘jekyll serve’ to take effects&lt;/em&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
+  &lt;img src=&quot;/Jekyll-Iris/assets/images/config.jpg&quot; alt=&quot;_config.yml file&quot; /&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;update-site-title&quot;&gt;Update Site Title&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/title.jpg&quot; alt=&quot;the title section in _config.yml&quot; /&gt;
+  Update the title variable to your name or whatever you like. This will impact on the site title and also the site logo which is located at the right hand side of the navigation bar. Currently it displays as my name.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;update-contact-information&quot;&gt;Update Contact Information&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/author.jpg&quot; alt=&quot;the author section in _config.yml&quot; /&gt;
+  Social media accounts are your contact details in footer, so people can connect with you via github, twiiter and linkedin. To change avatar, you need to replace avatar.jpg located at Jekyll-Iris/source/assets/images. The rest are not being used and only for house keeping.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;add-google-analytics&quot;&gt;Add Google Analytics&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/google_analytics.jpg&quot; alt=&quot;Set up google analytics for your site&quot; /&gt;
+  Here is a &lt;a href=&quot;https://support.google.com/analytics/answer/1032385?hl=en&quot;&gt;google analytics blog post&lt;/a&gt; for getting your tracking id. Once you have the tracking id, you can replace the dummy value here.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;add-disqus-comment&quot;&gt;Add Disqus Comment&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/disqus.jpg&quot; alt=&quot;Set up comments using disqus&quot; /&gt;
+  If comments variable is set to false, the comment section is not displayed.
+  Disqus_shortname is your disqus user name, you can register one from the &lt;a href=&quot;https://disqus.com/profile/signup/&quot;&gt;Disqus site&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;add-mail-chimps-subscribe-form&quot;&gt;Add Mail Chimps Subscribe Form&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/mail_chimps.jpg&quot; alt=&quot;Set up a subscribe form using mail chimps&quot; /&gt;
+  If subscribe variable is set to false, the subscribe form is not displayed.
+  Here is the &lt;a href=&quot;http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website&quot;&gt;blog post&lt;/a&gt; from mail chimps for getting a subscribe form. Once you have the embed form code, copy and paste into Jekyll-Iris/source/_includes/subscribe.html.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;configurate-which-social-media-account-can-share-your-blog-post&quot;&gt;Configurate which social media account can share your blog post&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/post_share.jpg&quot; alt=&quot;Configurate social media accounts for your blog post&quot; /&gt;
+  You can simply change the value true or false, you can turn share icons on or off for your blog posts.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;configurate-how-many-posts-in-one-page&quot;&gt;Configurate how many posts in one page&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/post_per_page.jpg&quot; alt=&quot;Configurate the post number per page&quot; /&gt;
+  Currently it only displays two posts per page. If it is more than two posts in the post folder, ‘Order Post’ button will appear and navigate users to more posts. You can just change it to the suitable number for your site.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;configurate-the-dynamic-typing-text-at-home-page&quot;&gt;Configurate the dynamic typing text at home page&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/intro_text.jpg&quot; alt=&quot;Configurate the dynamic-typing text in intro&quot; /&gt;
+  Leave &amp;lt;span&amp;gt; in and replace any text you want, you can also add more lines too.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;update-color-theme&quot;&gt;Update Color Theme&lt;/h3&gt;
+    &lt;p&gt;Not everyone likes pink and purple. You certainly can change them. The file is located at Jekyll-Iris/source/_sass/_variables.scss
+  You only need to run ‘jekyll serve’ for _config.yml. For others files, you need to refresh the web broswer to see changes.&lt;/p&gt;
+
+    &lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
+  &lt;img src=&quot;/Jekyll-Iris/assets/images/sass_variables.jpg&quot; alt=&quot;Find variables.sass file in source folder&quot; /&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/color.jpg&quot; alt=&quot;Change primary and secondary color&quot; /&gt;
+You can change primary and secondary color here. Primary color is purple, and secondary color is pink in this theme. Blue and green may go well too.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-3-writing-your-first-post&quot;&gt;Step 3: Writing Your First Post&lt;/h2&gt;
+&lt;p&gt;You may be happy with the site and decide to write a first blog post, or you may want to customise more, useful tips down the bottom of the page may help you to get started.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;make-a-new-file&quot;&gt;Make a new file&lt;/h4&gt;
+    &lt;p&gt;Navigate to the _post folder located at Jekyll-Iris/source/_posts,&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;all-posts-begin-with-these-variables&quot;&gt;All posts begin with these variables:&lt;/h4&gt;
+    &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/post.jpg&quot; alt=&quot;Post&quot; /&gt;
+ &lt;strong&gt;layout&lt;/strong&gt;: You can refer any layout from Jekyll-Iris/source/_layout folder. In this theme, you only use the post layout.
+ &lt;strong&gt;title&lt;/strong&gt;: Post title
+ &lt;strong&gt;permalink&lt;/strong&gt;: This needs to be unique, it will become a part of the url
+ &lt;strong&gt;date&lt;/strong&gt;: Posts are sorted by the date in a descendant order&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;write-the-content&quot;&gt;Write the content&lt;/h4&gt;
+    &lt;p&gt;You can use markdown syntax and/or a normal html syntax.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-4-deploying-to-github-pages&quot;&gt;Step 4: Deploying to Github Pages&lt;/h2&gt;
+&lt;p&gt;In the production, you probably don’t need a base url as http://[your site]/Jekyll-Iris/. so base url in _config.yml should be empty.&lt;/p&gt;
+
+&lt;p&gt;The deploy command lines are below, you just need to change the github repo to yours.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;_site
+git init
+git add --all
+git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Deploy to GitHub Pages&amp;quot;&lt;/span&gt;
+git push --force --quiet &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://github.com/yourAccountName/your.git&amp;quot;&lt;/span&gt; master:gh-pages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-5--getting-a-customised-domain&quot;&gt;Step 5:  Getting a Customised Domain&lt;/h2&gt;
+
+&lt;p&gt;You are happy with the generic github domain, as yourUserName.github.io. You have spent absolutely zero money for your own blog site. If you want to have a domain ending with .com, etc. Here is a youtube tutorial which helped me to set up with my site. &lt;a href=&quot;https://www.youtube.com/watch?v=CJLb8UUIJPg&quot;&gt;How to: Free Website Hosting + Custom Domain with Github Pages&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;useful-tips&quot;&gt;Useful Tips&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Debugging: Printing out variables using inspect in Jekyll 3
+&lt;img src=&quot;/Jekyll-Iris/assets/images/print_out.jpg&quot; alt=&quot;Print out using inspect&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Commenting
+&lt;img src=&quot;/Jekyll-Iris/assets/images/commenting.jpg&quot; alt=&quot;Commenting&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Links&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/quickstart/&quot;&gt;The official Jekyll documentation&lt;/a&gt; is highly recommend to have a look if you want to edit the source folder.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;A Markdown Guide - Mastering Markdown&lt;/a&gt; is always handy. :)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have any questions or trouble to set up, I am happy to help. Just bear in mind that I am a programmer, but not a rubyist or jekyllist. Hope you find this post useful to you.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -88,66 +241,11 @@ or find a theme you like from &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-3--get-a-custom-domain-and-host-on-github&quot;&gt;Step 3:  Get a custom domain and host on github&lt;/h2&gt;
-
-&lt;p&gt;Now you have customised a local website running on your local pc. you may want to have your own web domain, such as www.xunaxu.com instead of xunaxu.github.io. Here is a youtube tutorial which helped me to set up my site.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=CJLb8UUIJPg&quot;&gt;How to: Free Website Hosting + Custom Domain with Github Pages&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-4-production-and-deployment&quot;&gt;Step 4: Production and Deployment&lt;/h2&gt;
-&lt;p&gt;In the production, you probably don’t need a base url as http://[your site]/Jekyll-Iris/. so base url in _config.yml should be empty.&lt;/p&gt;
-
-&lt;p&gt;The deploy command lines are below, you just need to change the github repo to yours.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;_site
-git init
-git add --all
-git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Deploy to GitHub Pages&amp;quot;&lt;/span&gt;
-git push --force --quiet &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://github.com/yourAccountName/your.git&amp;quot;&lt;/span&gt; master:gh-pages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;useful-tips&quot;&gt;Useful Tips&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Debugging: Printing out variables using inspect
-&lt;code&gt;
-\{\{ page.url | inspect \}\}
-&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Commenting
-&lt;code&gt;
-\{\% comment \%\}
-  ...adfasdf..
-\{\% endcomment \%\}
-&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Links&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/quickstart/&quot;&gt;The official Jekyll documentation&lt;/a&gt; is highly recommend to have a look.&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Markdown Guide&lt;/a&gt; is always handy.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 21 Oct 2016 00:00:00 +1030</pubDate>
-        <link>http://xunaxu.github.io/Jekyll-Iris/How to set up your blog using Github and Jekyll</link>
-        <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/How to set up your blog using Github and Jekyll</guid>
+        <link>http://xunaxu.github.io/Jekyll-Iris/How to set up your blog site using Jekyll and Github</link>
+        <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/How to set up your blog site using Jekyll and Github</guid>
         
-        
-        <category>jekyll</category>
-        
-        <category>doco</category>
         
       </item>
     

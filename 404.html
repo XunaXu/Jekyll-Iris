@@ -29,7 +29,7 @@
           
         
           
-          <a class="page-link button_outline" href="/Jekyll-Iris/about/">About Me</a>
+          <a class="page-link button_outline" href="/Jekyll-Iris/about/">About</a>
           
         
           
@@ -86,7 +86,7 @@
   
     myQuotes.push("<span>The best preparation for tomorrow is doing your best today.</span>");
   
-    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is not only my own graveyard, but also bury whoever comes cross. - xunaxu</span>");
+    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is my own graveyard. - xunaxu</span>");
   
 
     $(".intro-post-title").typed({
@@ -97,7 +97,17 @@
       loop: true,
       loopCount: false,
       cursorChar: "|"
-    });    
+    });
+
+    $(".toggle-button").click(function(){
+      if($(this).text() === 'expand'){
+        $(this).text('collapse');
+        $(this).parent('div').find('.expandable').attr( "expanded", "true" );
+      }else{
+        $(this).text('expand');
+        $(this).parent('div').find('.expandable').attr( "expanded", "false" );
+      }
+    });
 </script>
 
 
@@ -115,7 +125,6 @@
 
 
 <script id="dsq-count-scr" src="//xunaxu.disqus.com/count.js" async></script>
-
 
 
     

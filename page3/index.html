@@ -28,7 +28,7 @@
           
         
           
-          <a class="page-link button_outline" href="/Jekyll-Iris/about/">About Me</a>
+          <a class="page-link button_outline" href="/Jekyll-Iris/about/">About</a>
           
         
           
@@ -64,18 +64,19 @@
         </div>
       </header>
 
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae,... <a href="/Jekyll-Iris/consectetuer-adipiscing-elit-4" title="Permalink to: Consectetuer adipiscing elit-4" class="read-more button_outline">Read more</a></p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae,... <a href="/Jekyll-Iris/consectetuer-adipiscing-elit-4" title="Permalink to: Consectetuer adipiscing elit-4" class="read-more">Read more</a></p>
     </article>
   
 
   <!-- Pagination links -->
   <div class="pagination container">
     
-      <a href="/Jekyll-Iris/page2" class="previous button_outline">Newer Posts</a> 
+      <a href="/Jekyll-Iris/page2" class="previous button_outline">Newer Posts</a>
     
     
   </div>
-</section> 
+</section>
+
     <footer class="site-footer">
   <div class="container flex-container">
     
@@ -102,7 +103,7 @@
   
     myQuotes.push("<span>The best preparation for tomorrow is doing your best today.</span>");
   
-    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is not only my own graveyard, but also bury whoever comes cross. - xunaxu</span>");
+    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is my own graveyard. - xunaxu</span>");
   
 
     $(".intro-post-title").typed({
@@ -113,7 +114,17 @@
       loop: true,
       loopCount: false,
       cursorChar: "|"
-    });    
+    });
+
+    $(".toggle-button").click(function(){
+      if($(this).text() === 'expand'){
+        $(this).text('collapse');
+        $(this).parent('div').find('.expandable').attr( "expanded", "true" );
+      }else{
+        $(this).text('expand');
+        $(this).parent('div').find('.expandable').attr( "expanded", "false" );
+      }
+    });
 </script>
 
 
@@ -131,7 +142,6 @@
 
 
 <script id="dsq-count-scr" src="//xunaxu.disqus.com/count.js" async></script>
-
 
 
     

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About Me</title>
+  <title>About</title>
   <meta name="description" content="A free Jekyll theme for download">
 
   <link rel="stylesheet" href="/Jekyll-Iris/assets/css/main.css">
@@ -29,7 +29,7 @@
           
         
           
-          <a class="page-link button_outline" href="/Jekyll-Iris/about/">About Me</a>
+          <a class="page-link button_outline" href="/Jekyll-Iris/about/">About</a>
           
         
           
@@ -51,7 +51,7 @@
 
    <div class="post-title container center">
     <a href="/Jekyll-Iris/about" class="circle-avatar">
-		<img src="/Jekyll-Iris/assets/images/avatar.JPG" alt="Xuna Xu">
+		<img src="/Jekyll-Iris/assets/images/avatar.jpg" alt="Xuna Xu">
 	</a>
    </div>
 
@@ -62,11 +62,8 @@
 <p>You can find the source code for the Jekyll new theme at: <a href="https://github.com/jglovier/jekyll-new">jekyll-new</a>
 You can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">jekyll</a></p>
 
-
   </div>
 </article>
-
-
 
     <footer class="site-footer">
   <div class="container flex-container">
@@ -94,7 +91,7 @@ You can find the source code for Jekyll at <a href="https://github.com/jekyll/je
   
     myQuotes.push("<span>The best preparation for tomorrow is doing your best today.</span>");
   
-    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is not only my own graveyard, but also bury whoever comes cross. - xunaxu</span>");
+    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is my own graveyard. - xunaxu</span>");
   
 
     $(".intro-post-title").typed({
@@ -105,7 +102,17 @@ You can find the source code for Jekyll at <a href="https://github.com/jekyll/je
       loop: true,
       loopCount: false,
       cursorChar: "|"
-    });    
+    });
+
+    $(".toggle-button").click(function(){
+      if($(this).text() === 'expand'){
+        $(this).text('collapse');
+        $(this).parent('div').find('.expandable').attr( "expanded", "true" );
+      }else{
+        $(this).text('expand');
+        $(this).parent('div').find('.expandable').attr( "expanded", "false" );
+      }
+    });
 </script>
 
 
@@ -123,7 +130,6 @@ You can find the source code for Jekyll at <a href="https://github.com/jekyll/je
 
 
 <script id="dsq-count-scr" src="//xunaxu.disqus.com/count.js" async></script>
-
 
 
     

@@ -28,7 +28,7 @@
           
         
           
-          <a class="page-link button_outline" href="/Jekyll-Iris/about/">About Me</a>
+          <a class="page-link button_outline" href="/Jekyll-Iris/about/">About</a>
           
         
           
@@ -56,15 +56,15 @@
     <article class="post-item container">
       <header>
         <h1 class="post-title">
-          <a class="post-link" href="/Jekyll-Iris/How to set up your blog using Github and Jekyll">How to set up your blog using Github and Jekyll</a>
+          <a class="post-link" href="/Jekyll-Iris/How to set up your blog site using Jekyll and Github">How to Set Up a Blog Site Using Jekyll and Github</a>
         </h1>
         <div class="post-meta">
-        Oct 21, 2016 &nbsp;|&nbsp; 4 Min Read &nbsp; | &nbsp;
-          <span class="disqus-comment-count" data-disqus-identifier="How to set up your blog using Github and Jekyll"></span>
+        Oct 21, 2016 &nbsp;|&nbsp; 10 Min Read &nbsp; | &nbsp;
+          <span class="disqus-comment-count" data-disqus-identifier="How to Set Up a Blog Site Using Jekyll and Github"></span>
         </div>
       </header>
 
-      <p>Step 1: Get a jekyll theme You can Download or clone repo Jekyll Iris git clone https://github.com/XunaXu/Jeykll-Iris.git or find a theme you like from Jekyll Theme website Step 2: A quick guide for Jekyll using Jekyll Iris _config.yml This is a file with global variables. There are detailed comments to explain all variables in the actual... <a href="/Jekyll-Iris/How to set up your blog using Github and Jekyll" title="Permalink to: How to set up your blog using Github and Jekyll" class="read-more button_outline">Read more</a></p>
+      <p>Here is a step by step guide to set up a Jekyll site and host on github as github pages. It covers from starting with a generic theme to deploying to github pages. Here we are using Jekyll Iris Theme as an example. Step 1: Setting Up and Running a Jekyll Site Locally You can clone... <a href="/Jekyll-Iris/How to set up your blog site using Jekyll and Github" title="Permalink to: How to Set Up a Blog Site Using Jekyll and Github" class="read-more">Read more</a></p>
     </article>
   
     <article class="post-item container">
@@ -78,7 +78,7 @@
         </div>
       </header>
 
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae,... <a href="/Jekyll-Iris/consectetuer-adipiscing-elit-2" title="Permalink to: Consectetuer adipiscing elit-2" class="read-more button_outline">Read more</a></p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae,... <a href="/Jekyll-Iris/consectetuer-adipiscing-elit-2" title="Permalink to: Consectetuer adipiscing elit-2" class="read-more">Read more</a></p>
     </article>
   
 
@@ -89,7 +89,8 @@
       <a href="/Jekyll-Iris/page2" class="next button_outline">Older Posts</a>
     
   </div>
-</section> 
+</section>
+
     <footer class="site-footer">
   <div class="container flex-container">
     
@@ -116,7 +117,7 @@
   
     myQuotes.push("<span>The best preparation for tomorrow is doing your best today.</span>");
   
-    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is not only my own graveyard, but also bury whoever comes cross. - xunaxu</span>");
+    myQuotes.push("<span>Without documentation and test cases, my 'masterpiece' is my own graveyard. - xunaxu</span>");
   
 
     $(".intro-post-title").typed({
@@ -127,7 +128,17 @@
       loop: true,
       loopCount: false,
       cursorChar: "|"
-    });    
+    });
+
+    $(".toggle-button").click(function(){
+      if($(this).text() === 'expand'){
+        $(this).text('collapse');
+        $(this).parent('div').find('.expandable').attr( "expanded", "true" );
+      }else{
+        $(this).text('expand');
+        $(this).parent('div').find('.expandable').attr( "expanded", "false" );
+      }
+    });
 </script>
 
 
@@ -145,7 +156,6 @@
 
 
 <script id="dsq-count-scr" src="//xunaxu.disqus.com/count.js" async></script>
-
 
 
     
