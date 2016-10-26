@@ -5,8 +5,8 @@
     <description>A free Jekyll theme for download</description>
     <link>http://xunaxu.github.io/Jekyll-Iris/</link>
     <atom:link href="http://xunaxu.github.io/Jekyll-Iris/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Oct 2016 01:17:34 +1030</pubDate>
-    <lastBuildDate>Thu, 27 Oct 2016 01:17:34 +1030</lastBuildDate>
+    <pubDate>Thu, 27 Oct 2016 01:41:40 +1030</pubDate>
+    <lastBuildDate>Thu, 27 Oct 2016 01:41:40 +1030</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -26,7 +26,7 @@ jekyll serve
 Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/&lt;/p&gt;
 
 &lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
-&lt;img src=&quot;/Jekyll-Iris/assets/images/setup_jekyll&quot; alt=&quot;Set up and run a jekyll theme&quot; /&gt;
+&lt;img src=&quot;/Jekyll-Iris/assets/images/setup_jekyll.jpg&quot; alt=&quot;Set up and run a jekyll theme&quot; /&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;I am using a Mac which has pre-installed Ruby. You may need to download &lt;a href=&quot;https://www.ruby-lang.org/en/downloads/&quot;&gt;Ruby&lt;/a&gt;, if ‘bundle install’ is not working, you may also need to install it using this command ‘gem install bundle’.&lt;/p&gt;
 
