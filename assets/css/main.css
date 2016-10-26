@@ -296,7 +296,7 @@ body {
 }
 @media screen and (max-width: 769px) {
   body {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -377,10 +377,11 @@ code {
   background-color: #f9f9f9;
   display: block;
   white-space: pre-wrap;
+  word-wrap: break-word;
 }
 @media screen and (max-width: 769px) {
   code {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -432,12 +433,35 @@ body {
 }
 
 .expandable[expanded="true"] {
+  overflow: auto;
+  border: 2px solid #999999;
   height: auto;
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.15s ease-out;
   -moz-transition: opacity 0.15s ease-out;
   transition: opacity 0.15s ease-out;
+}
+
+p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.hint {
+  border-radius: 3px;
+  border: 1px solid #7E57C2;
+  padding: 0.33333em;
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 200%;
+}
+@media screen and (min-width: 768px) {
+  img {
+    max-width: 100%;
+  }
 }
 
 .social li {
@@ -467,10 +491,6 @@ body {
     font-size: 1.8em;
   }
 }
-p {
-  white-space: pre-wrap;
-}
-
 body.home-intro {
   width: 100%;
   display: table;
@@ -720,7 +740,12 @@ body.home-intro .intro {
 }
 .post .post-title .title {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
+}
+@media screen and (max-width: 769px) {
+  .post .post-title .title {
+    font-size: 27px;
+  }
 }
 .post .post-content {
   padding-top: 2em;

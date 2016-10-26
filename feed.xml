@@ -5,19 +5,20 @@
     <description>A free Jekyll theme for download</description>
     <link>http://xunaxu.github.io/Jekyll-Iris/</link>
     <atom:link href="http://xunaxu.github.io/Jekyll-Iris/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Oct 2016 02:30:47 +1030</pubDate>
-    <lastBuildDate>Tue, 25 Oct 2016 02:30:47 +1030</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Wed, 26 Oct 2016 20:00:55 +1030</pubDate>
+    <lastBuildDate>Wed, 26 Oct 2016 20:00:55 +1030</lastBuildDate>
+    <generator>Jekyll v3.0.2</generator>
     
       <item>
         <title>How to Set Up a Blog Site Using Jekyll and Github</title>
-        <description>&lt;p&gt;Here is a step by step guide to set up a Jekyll site and host on github as github pages. It covers from starting with a generic theme to deploying to github pages. Here we are using Jekyll Iris Theme as an example.&lt;/p&gt;
+        <description>&lt;p&gt;Here is a step by step guide to set up a Jekyll site and github page. It covers from starting with a generic theme to deploying to github. We are using Jekyll Iris Theme as an example here.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1-setting-up-and-running-a-jekyll-site-locally&quot;&gt;Step 1: Setting Up and Running a Jekyll Site Locally&lt;/h2&gt;
-&lt;p&gt;You can clone Jekyll Iris theme by following commands below, or you can find a theme you like from &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme website&lt;/a&gt;
-&lt;code&gt;git clone http://github.com/XunaXu/Jeykll-Iris.git
+&lt;p&gt;You can clone Jekyll Iris theme by following commands below, or you can find a theme you like at &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Theme website&lt;/a&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+git clone http://github.com/XunaXu/Jeykll-Iris.git
 cd Jeykll-Iris
 bundle install
 jekyll serve
@@ -27,6 +28,7 @@ Open a web broswer at this address: http://127.0.0.1:4000/Jekyll-Iris/&lt;/p&gt;
 &lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
 &lt;img src=&quot;/Jekyll-Iris/assets/images/setup_jekyll&quot; alt=&quot;Set up and run a jekyll theme&quot; /&gt;
 &lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;I am using a Mac which has pre-installed Ruby. You may need to download [Ruby] (https://www.ruby-lang.org/en/downloads/), if ‘bundle install’ is not working, you may also need to install it using this command ‘gem install bundle’.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -36,7 +38,7 @@ Open a web broswer at this address: http://127.0.0.1:4000/Jekyll-Iris/&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;update-configyml&quot;&gt;Update _config.yml&lt;/h3&gt;
-    &lt;p&gt;Open the jekyll iris project using an IDE or whatever way you prefer. there is _config.yml located at on the top level of directory. There are a list of variables in _config.yml we need to change. &lt;em&gt;Any changes in this file requires to run ‘jekyll serve’ to take effects&lt;/em&gt;.&lt;/p&gt;
+    &lt;p&gt;Open the jekyll iris project using an IDE or whatever way you prefer. there is _config.yml located at on the top level of directory. There are a list of variables in _config.yml we need to change. &lt;strong&gt;Any changes in this file requires to run ‘jekyll serve’ to take effects&lt;/strong&gt;.&lt;/p&gt;
 
     &lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
   &lt;img src=&quot;/Jekyll-Iris/assets/images/config.jpg&quot; alt=&quot;_config.yml file&quot; /&gt;
@@ -45,58 +47,95 @@ Open a web broswer at this address: http://127.0.0.1:4000/Jekyll-Iris/&lt;/p&gt;
     &lt;ul&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;update-site-title&quot;&gt;Update Site Title&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/title.jpg&quot; alt=&quot;the title section in _config.yml&quot; /&gt;
-  Update the title variable to your name or whatever you like. This will impact on the site title and also the site logo which is located at the right hand side of the navigation bar. Currently it displays as my name.&lt;/p&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  title: Xuna Xu
+ &lt;/code&gt;
+Update the title variable to your name or whatever you like. This will impact on the site title and also the site logo which is located at the right hand side of the navigation bar. Currently it displays as my name.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;update-contact-information&quot;&gt;Update Contact Information&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/author.jpg&quot; alt=&quot;the author section in _config.yml&quot; /&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  github    : http://github.com/xunaxu
+  twitter   : http://twitter.com/xuna_x
+  linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
+  avatar    : /assets/images/avatar.jpg
+ &lt;/code&gt;
   Social media accounts are your contact details in footer, so people can connect with you via github, twiiter and linkedin. To change avatar, you need to replace avatar.jpg located at Jekyll-Iris/source/assets/images. The rest are not being used and only for house keeping.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;add-google-analytics&quot;&gt;Add Google Analytics&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/google_analytics.jpg&quot; alt=&quot;Set up google analytics for your site&quot; /&gt;
-  Here is a &lt;a href=&quot;https://support.google.com/analytics/answer/1032385?hl=en&quot;&gt;google analytics blog post&lt;/a&gt; for getting your tracking id. Once you have the tracking id, you can replace the dummy value here.&lt;/p&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  # google analytics
+  google_analytics: UA-819232-**
+ &lt;/code&gt;
+Here is a &lt;a href=&quot;https://support.google.com/analytics/answer/1032385?hl=en&quot;&gt;google analytics blog post&lt;/a&gt; for getting your tracking id. Once you have the tracking id, you can replace the dummy value here.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;add-disqus-comment&quot;&gt;Add Disqus Comment&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/disqus.jpg&quot; alt=&quot;Set up comments using disqus&quot; /&gt;
-  If comments variable is set to false, the comment section is not displayed.
-  Disqus_shortname is your disqus user name, you can register one from the &lt;a href=&quot;https://disqus.com/profile/signup/&quot;&gt;Disqus site&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  # comments
+  comments: true
+  disqus_shortname: &quot;xunaxu&quot;
+ &lt;/code&gt;
+If comments variable is set to false, the comment section is not displayed.
+Disqus_shortname is your disqus user name, you can register one from the &lt;a href=&quot;https://disqus.com/profile/signup/&quot;&gt;Disqus site&lt;/a&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;add-mail-chimps-subscribe-form&quot;&gt;Add Mail Chimps Subscribe Form&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/mail_chimps.jpg&quot; alt=&quot;Set up a subscribe form using mail chimps&quot; /&gt;
-  If subscribe variable is set to false, the subscribe form is not displayed.
-  Here is the &lt;a href=&quot;http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website&quot;&gt;blog post&lt;/a&gt; from mail chimps for getting a subscribe form. Once you have the embed form code, copy and paste into Jekyll-Iris/source/_includes/subscribe.html.&lt;/p&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  # subscribe
+  subscribe: true
+ &lt;/code&gt;
+If subscribe variable is set to false, the subscribe form is not displayed.
+Here is the &lt;a href=&quot;http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website&quot;&gt;blog post&lt;/a&gt; from mail chimps for getting a subscribe form. Once you have the embed form code, copy and paste into Jekyll-Iris/source/_includes/subscribe.html.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;configurate-which-social-media-account-can-share-your-blog-post&quot;&gt;Configurate which social media account can share your blog post&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/post_share.jpg&quot; alt=&quot;Configurate social media accounts for your blog post&quot; /&gt;
-  You can simply change the value true or false, you can turn share icons on or off for your blog posts.&lt;/p&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  #share
+  email-share: true
+  fb-share: true
+  twitter-share: true
+  linkedin-share: true
+  reddit-share: false
+  google-plus-share: true
+  tumblr-share: false
+  pinterest-share: false
+ &lt;/code&gt;
+You can simply change the value true or false, you can turn share icons on or off for your blog posts.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;configurate-how-many-posts-in-one-page&quot;&gt;Configurate how many posts in one page&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/post_per_page.jpg&quot; alt=&quot;Configurate the post number per page&quot; /&gt;
-  Currently it only displays two posts per page. If it is more than two posts in the post folder, ‘Order Post’ button will appear and navigate users to more posts. You can just change it to the suitable number for your site.&lt;/p&gt;
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  paginate: 2
+ &lt;/code&gt;
+Currently it only displays two posts per page. If it is more than two posts in the post folder, ‘Order Post’ button will appear and navigate users to more posts. You can just change it to the suitable number for your site.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;configurate-the-dynamic-typing-text-at-home-page&quot;&gt;Configurate the dynamic typing text at home page&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/intro_text.jpg&quot; alt=&quot;Configurate the dynamic-typing text in intro&quot; /&gt;
-  Leave &amp;lt;span&amp;gt; in and replace any text you want, you can also add more lines too.&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  lines:
+      - text: &quot;&amp;lt;span&amp;gt;The best preparation for tomorrow is doing your best today.&amp;lt;/span&amp;gt;&quot;
+      - text: &quot;&amp;lt;span&amp;gt;Without documentation and test cases, my &#39;masterpiece&#39; is my own graveyard. -xunaxu&amp;lt;/span&amp;gt;&quot;
+ &lt;/code&gt;
+Leave &amp;lt;span&amp;gt; in and replace any text you want, you can also add more lines too.&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;update-color-theme&quot;&gt;Update Color Theme&lt;/h3&gt;
     &lt;p&gt;Not everyone likes pink and purple. You certainly can change them. The file is located at Jekyll-Iris/source/_sass/_variables.scss
-  You only need to run ‘jekyll serve’ for _config.yml. For others files, you need to refresh the web broswer to see changes.&lt;/p&gt;
+You only need to run ‘jekyll serve’ for _config.yml. For others files such as sass files, all you need to do is to refresh the web browser to see changes.&lt;/p&gt;
 
     &lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
   &lt;img src=&quot;/Jekyll-Iris/assets/images/sass_variables.jpg&quot; alt=&quot;Find variables.sass file in source folder&quot; /&gt;
   &lt;/div&gt;&lt;/div&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/color.jpg&quot; alt=&quot;Change primary and secondary color&quot; /&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  $primary-color: #7E57C2;
+  $secondary-color: #F48FB1;
+ &lt;/code&gt;
 You can change primary and secondary color here. Primary color is purple, and secondary color is pink in this theme. Blue and green may go well too.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -107,136 +146,108 @@ You can change primary and secondary color here. Primary color is purple, and se
 &lt;ol&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;make-a-new-file&quot;&gt;Make a new file&lt;/h4&gt;
-    &lt;p&gt;Navigate to the _post folder located at Jekyll-Iris/source/_posts,&lt;/p&gt;
+    &lt;p&gt;Navigate to the _post folder located at Jekyll-Iris/source/_posts, then create a new file named in a format as ‘yyyy-mm-dd-fileName.md’ or ‘yyyy-mm-dd-fileName.markdown’, For example, ‘2016-10-21-how to set up a blog site using Jekyll and GitHub.md’. &lt;strong&gt;The date in the file name is important, can not be omitted&lt;/strong&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
+ &lt;img src=&quot;/Jekyll-Iris/assets/images/new_file.jpg&quot; alt=&quot;Create a blog post in _post folder&quot; /&gt;
+ &lt;/div&gt;&lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h4 id=&quot;all-posts-begin-with-these-variables&quot;&gt;All posts begin with these variables:&lt;/h4&gt;
-    &lt;p&gt;&lt;img src=&quot;/Jekyll-Iris/assets/images/post.jpg&quot; alt=&quot;Post&quot; /&gt;
- &lt;strong&gt;layout&lt;/strong&gt;: You can refer any layout from Jekyll-Iris/source/_layout folder. In this theme, you only use the post layout.
- &lt;strong&gt;title&lt;/strong&gt;: Post title
- &lt;strong&gt;permalink&lt;/strong&gt;: This needs to be unique, it will become a part of the url
- &lt;strong&gt;date&lt;/strong&gt;: Posts are sorted by the date in a descendant order&lt;/p&gt;
+    &lt;h4 id=&quot;all-posts-begin-with-this-exact-format&quot;&gt;All posts begin with this exact format:&lt;/h4&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     ---
+     layout: post
+     title: &quot;how to blah&quot;
+     permalink: &quot;how to blah&quot;
+     date: 2016-10-21
+     ---
+     your post content starts here!
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;layout: You can refer any layout from Jekyll-Iris/source/_layout folder. In this theme, you only use the post layout.
+title: Post title
+permalink: This needs to be unique, it will become a part of the url
+date: Posts are sorted by the date in a descendant order.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;write-the-content&quot;&gt;Write the content&lt;/h4&gt;
-    &lt;p&gt;You can use markdown syntax and/or a normal html syntax.&lt;/p&gt;
+    &lt;p&gt;You can use markdown syntax and/or a normal html syntax to write blog content. Once you are familiar with markdown syntax, it does speed up comparing with html syntax. simply you type less.&lt;/p&gt;
+    &lt;div class=&quot;expand-div&quot;&gt;Having trouble? Have a look at my screen, it may help. &lt;button class=&quot;toggle-button&quot;&gt;expand&lt;/button&gt; &lt;div class=&quot;expandable&quot; expanded=&quot;false&quot;&gt;
+ &lt;img src=&quot;/Jekyll-Iris/assets/images/syntax.jpg&quot; alt=&quot;Markdown and html syntax as an example&quot; /&gt;
+ &lt;/div&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;hint&quot;&gt;&lt;strong&gt; Useful Tips &amp;gt; &lt;/strong&gt;
+ &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;A Markdown Guide - Mastering Markdown&lt;/a&gt; is always handy.
+ &lt;/div&gt;
+    &lt;p&gt;To highlight code syntax, please using Jekyll highlight below (no ‘\’ required ).
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;\{\% highlight css %}
+ \{\% endhighlight %}
+&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;step-4-deploying-to-github-pages&quot;&gt;Step 4: Deploying to Github Pages&lt;/h2&gt;
-&lt;p&gt;In the production, you probably don’t need a base url as http://[your site]/Jekyll-Iris/. so base url in _config.yml should be empty.&lt;/p&gt;
+&lt;h2 id=&quot;step-4-deployment&quot;&gt;Step 4: Deployment&lt;/h2&gt;
 
-&lt;p&gt;The deploy command lines are below, you just need to change the github repo to yours.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;get-a-github-page&quot;&gt;Get a GitHub Page&lt;/h4&gt;
+    &lt;p&gt;Create a GitHub repository named yourUserName.github.io. Having trouble? Follow steps at &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Page&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;update-variables-in-configyml&quot;&gt;Update Variables in _config.yml&lt;/h4&gt;
+    &lt;p&gt;Now you have a web page hosted at GitHub. There are a couple of more things we need to do before deploying your Jekyll site into the repository.  Back to _config.yml, we need to change two variables: url and baseurl. url should be your GitHub page as yourUserName.github.io. and baseurl should be empty. Your site will be hosted at this url ‘yourUserName.github.io’ after deployment.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;deploy-to-github&quot;&gt;Deploy to GitHub&lt;/h4&gt;
+    &lt;p&gt;Finally, it is the deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to change the github repo to yours.
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;cd _site
+ git init
+ git add --all
+ git commit -m &quot;Deploy to GitHub Pages&quot;
+ git push --force --quiet &quot;https://github.com/yourAccountName/your.git&quot; master:gh-pages
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;_site
-git init
-git add --all
-git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Deploy to GitHub Pages&amp;quot;&lt;/span&gt;
-git push --force --quiet &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://github.com/yourAccountName/your.git&amp;quot;&lt;/span&gt; master:gh-pages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Congratulations! Your site should be alive at this address, http://yourUserName.github.io. Not working? Shoot me the problems, I will try to help you out!&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-5--getting-a-customised-domain&quot;&gt;Step 5:  Getting a Customised Domain&lt;/h2&gt;
 
-&lt;p&gt;You are happy with the generic github domain, as yourUserName.github.io. You have spent absolutely zero money for your own blog site. If you want to have a domain ending with .com, etc. Here is a youtube tutorial which helped me to set up with my site. &lt;a href=&quot;https://www.youtube.com/watch?v=CJLb8UUIJPg&quot;&gt;How to: Free Website Hosting + Custom Domain with Github Pages&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Great news, you have spent absolutely zero money to own a blog site so far. You maybe happy with a generic github domain, as yourUserName.github.io, but you may want to have a domain ending with .com, .net, .org etc. Here is a youtube tutorial which helped me to set it up. &lt;a href=&quot;https://www.youtube.com/watch?v=CJLb8UUIJPg&quot;&gt;How to: Free Website Hosting + Custom Domain with Github Pages&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h3 id=&quot;useful-tips&quot;&gt;Useful Tips&lt;/h3&gt;
-
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Debugging: Printing out variables using inspect in Jekyll 3
-&lt;img src=&quot;/Jekyll-Iris/assets/images/print_out.jpg&quot; alt=&quot;Print out using inspect&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;Referring global variables from _config.yml in the source folder using site.variableName. Here is an example, delete any ‘\’ in the code.
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;
+  \{\{ site.author.name }}
+ &lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Commenting
-&lt;img src=&quot;/Jekyll-Iris/assets/images/commenting.jpg&quot; alt=&quot;Commenting&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;Debugging: Printing out variables using inspect in Jekyll 3, here is an example, delete any ‘\’ in the code.
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;
+  \{\{ page.url | inspect }}
+ &lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Links&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/quickstart/&quot;&gt;The official Jekyll documentation&lt;/a&gt; is highly recommend to have a look if you want to edit the source folder.&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;A Markdown Guide - Mastering Markdown&lt;/a&gt; is always handy. :)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you have any questions or trouble to set up, I am happy to help. Just bear in mind that I am a programmer, but not a rubyist or jekyllist. Hope you find this post useful to you.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-2-a-quick-guide-for-jekyll-using-jekyll-iris&quot;&gt;Step 2: A quick guide for Jekyll using Jekyll Iris&lt;/h2&gt;
-
-&lt;h3 id=&quot;configyml&quot;&gt;_config.yml&lt;/h3&gt;
-
-&lt;p&gt;This is a file with global variables. There are detailed comments to explain all variables in the actual file. Some variables are for toggle features on and off, some are for defining your disqus account, your google analytics id. etc.  So Take a look at _config.yml file to begin with is a good start, and don’t forget to run &lt;code&gt;Jekyll Serve&lt;/code&gt; on the terminal if there are some change in this file.&lt;/p&gt;
-
-&lt;p&gt;All global variable can be referred in your source file, here is an example. &lt;code&gt;\{\{site.author.name\}\}&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;source-folder&quot;&gt;Source folder&lt;/h3&gt;
-
-&lt;p&gt;Source folder is where you should do modifications and put your posts in. It auto generates _site folder for you when the ‘jekyll serve’ command is runing. You do need to understand this folder if you want to customise your website. Here are basic explanations.&lt;/p&gt;
-
-&lt;p&gt;Source folders has five folders, four private, one public.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;includes&quot;&gt;_includes&lt;/h4&gt;
-    &lt;p&gt;It divides a webpage into separated html sections: a build block for all pages.&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;footer&lt;/li&gt;
-      &lt;li&gt;header (nav bar in this case)&lt;/li&gt;
-      &lt;li&gt;comments (for disqus),&lt;/li&gt;
-      &lt;li&gt;social (as social icons, your linked in, facebook, github accounts)&lt;/li&gt;
-      &lt;li&gt;share (as allow other to share your posts via twitter, google, etc)&lt;/li&gt;
-      &lt;li&gt;subscribe ( mail chimp in this case)&lt;/li&gt;
-      &lt;li&gt;scripts (All javascripts file links)&lt;/li&gt;
-      &lt;li&gt;head (as &amp;lt;head&amp;gt; in html section)&lt;/li&gt;
-    &lt;/ul&gt;
+    &lt;p&gt;Commenting syntax, delete any ‘\’ in the code example below.
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;
+  \{\% comment %}
+  blah blah blah
+  \{\% endcomment %}
+ &lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h4 id=&quot;layouts&quot;&gt;_layouts&lt;/h4&gt;
-    &lt;p&gt;Here are only two layouts defined, one for all post pages and about page. It requires html sections from _includes folder to build a webpage.&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;default layout: a standard webpage with header and footer. it is used for other pages, such as about, index and post pages.&lt;/li&gt;
-      &lt;li&gt;about layout: it is based on the post layout.&lt;/li&gt;
-      &lt;li&gt;post layout: post layout which defines your blog post.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;posts&quot;&gt;_posts&lt;/h4&gt;
-    &lt;p&gt;A folder containing markdown files for blog posts. This is the only folder you need to change once you are happy with the website functions and looks. You need to define these variables on the top for each post.&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;layout: post as an example, you refer any layout from _layout folder.&lt;/li&gt;
-      &lt;li&gt;title:  “Consectetuer adipiscing elit-1”&lt;/li&gt;
-      &lt;li&gt;permalink:  “consectetuer-adipiscing-elit-1” (this needs to be unique, it will become a part of the url)&lt;/li&gt;
-      &lt;li&gt;date: the post normally are sorted by the date in decent order&lt;/li&gt;
-      &lt;li&gt;categories: (it is not used here, but you can define tags to category your posts.)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;sass&quot;&gt;_sass&lt;/h4&gt;
-    &lt;p&gt;It has all scss files for the site. Your cool makedown style and unique website looks are beginning from here.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;assets&quot;&gt;assets&lt;/h4&gt;
-    &lt;ul&gt;
-      &lt;li&gt;js folder - Js libraries and packages you are using, copy and paste here.&lt;/li&gt;
-      &lt;li&gt;fonts folder - we are using foundation here.&lt;/li&gt;
-      &lt;li&gt;images folder - this is where put your avatar&lt;/li&gt;
-      &lt;li&gt;css folder - it refers to _sass folder.&lt;/li&gt;
-      &lt;li&gt;404 page&lt;/li&gt;
-      &lt;li&gt;about page&lt;/li&gt;
-      &lt;li&gt;index page&lt;/li&gt;
-      &lt;li&gt;feed.xml  - not being used here.&lt;/li&gt;
-    &lt;/ul&gt;
+    &lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/quickstart/&quot;&gt;The official Jekyll documentation&lt;/a&gt; is highly recommend to have a look if you want to edit the source folder.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -246,6 +257,80 @@ git push --force --quiet &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://gith
         <link>http://xunaxu.github.io/Jekyll-Iris/How to set up your blog site using Jekyll and Github</link>
         <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/How to set up your blog site using Jekyll and Github</guid>
         
+        
+      </item>
+    
+      <item>
+        <title>Consectetuer adipiscing elit-4</title>
+        <description>&lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, &lt;code&gt;commodo vitae&lt;/code&gt;, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. &lt;a href=&quot;#&quot;&gt;Donec non enim&lt;/a&gt; in turpis pulvinar facilisis. Ut felis.&lt;/p&gt;
+
+&lt;h2&gt;Header Level 2&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Header Level 3&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Tue, 22 Dec 2015 08:38:35 +1030</pubDate>
+        <link>http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-4</link>
+        <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-4</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Consectetuer adipiscing elit-3</title>
+        <description>&lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, &lt;code&gt;commodo vitae&lt;/code&gt;, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. &lt;a href=&quot;#&quot;&gt;Donec non enim&lt;/a&gt; in turpis pulvinar facilisis. Ut felis.&lt;/p&gt;
+
+&lt;h2&gt;Header Level 2&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h3&gt;Header Level 3&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Tue, 22 Dec 2015 08:38:35 +1030</pubDate>
+        <link>http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-3</link>
+        <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-3</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
         
       </item>
     
@@ -269,11 +354,11 @@ git push --force --quiet &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://gith
   &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
         <pubDate>Tue, 22 Dec 2015 08:38:35 +1030</pubDate>
         <link>http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-2</link>
@@ -306,89 +391,15 @@ git push --force --quiet &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://gith
   &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
         <pubDate>Tue, 22 Dec 2015 08:38:35 +1030</pubDate>
         <link>http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-1</link>
         <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-1</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Consectetuer adipiscing elit-3</title>
-        <description>&lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, &lt;code&gt;commodo vitae&lt;/code&gt;, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. &lt;a href=&quot;#&quot;&gt;Donec non enim&lt;/a&gt; in turpis pulvinar facilisis. Ut felis.&lt;/p&gt;
-
-&lt;h2&gt;Header Level 2&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;h3&gt;Header Level 3&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-        <pubDate>Tue, 22 Dec 2015 08:38:35 +1030</pubDate>
-        <link>http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-3</link>
-        <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-3</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Consectetuer adipiscing elit-4</title>
-        <description>&lt;p&gt;&lt;strong&gt;Pellentesque habitant morbi tristique&lt;/strong&gt; senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em&gt;Aenean ultricies mi vitae est.&lt;/em&gt; Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, &lt;code&gt;commodo vitae&lt;/code&gt;, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. &lt;a href=&quot;#&quot;&gt;Donec non enim&lt;/a&gt; in turpis pulvinar facilisis. Ut felis.&lt;/p&gt;
-
-&lt;h2&gt;Header Level 2&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;h3&gt;Header Level 3&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-  &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-        <pubDate>Tue, 22 Dec 2015 08:38:35 +1030</pubDate>
-        <link>http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-4</link>
-        <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/consectetuer-adipiscing-elit-4</guid>
         
         
         <category>jekyll</category>
