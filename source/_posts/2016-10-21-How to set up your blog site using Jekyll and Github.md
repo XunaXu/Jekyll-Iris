@@ -5,7 +5,7 @@ permalink:  "How to set up your blog site using Jekyll and Github"
 date:   2016-10-21
 ---
 
-Since I set up this site using Jekyll and Github Page, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most.
+Since I set up this site using Jekyll and Github Pages, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most.
 <br/>
 With this guide you will be able to quickly and easily have a blog ready to go, without spending any money!
 
@@ -167,8 +167,8 @@ date: Posts are sorted by the date in a descendant order.
 
 ## Step 4: Deployment
 
-1. ####Get a GitHub Page
-	Create a GitHub repository named yourUserName.github.io. Having trouble? Follow steps at [GitHub Page](https://pages.github.com/).
+1. ####Get a GitHub Pages
+	Create a GitHub repository named yourUserName.github.io. Having trouble? Follow steps at [GitHub Pages](https://pages.github.com/).
 
 2. ####Update Variables in _config.yml
 	Now you have a web page hosted at GitHub. There are a couple of more things we need to do before deploying your Jekyll site into the repository.  Back to _config.yml, we need to change two variables: url and baseurl. url should be your GitHub page as yourUserName.github.io. and baseurl should be empty. Your site will be hosted at this url 'yourUserName.github.io' after deployment.
