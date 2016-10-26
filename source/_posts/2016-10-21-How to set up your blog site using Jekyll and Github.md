@@ -189,6 +189,8 @@ Congratulations! Your site should be live at this address, http://yourUserName.g
 
 Great news, you have spent absolutely zero money to own a blog site so far. You maybe happy with a generic github domain, as yourUserName.github.io, but you may want to have a domain ending with .com, .net, .org etc. Here is a youtube tutorial which helped me to set it up. [How to: Free Website Hosting + Custom Domain with Github Pages](https://www.youtube.com/watch?v=CJLb8UUIJPg)
 
+Don't forget to update the url variable in _config.yml to whatever domain name you decided to buy.
+
 <br/>
 
 ---
