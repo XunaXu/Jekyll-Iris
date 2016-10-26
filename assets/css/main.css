@@ -442,6 +442,14 @@ body {
   -moz-transition: opacity 0.15s ease-out;
   transition: opacity 0.15s ease-out;
 }
+.expandable[expanded="true"] img {
+  max-width: 200%;
+}
+@media screen and (min-width: 768px) {
+  .expandable[expanded="true"] img {
+    max-width: 100%;
+  }
+}
 
 p {
   white-space: pre-wrap;
@@ -453,15 +461,6 @@ p {
   border: 1px solid #7E57C2;
   padding: 0.33333em;
   margin-bottom: 1em;
-}
-
-img {
-  max-width: 200%;
-}
-@media screen and (min-width: 768px) {
-  img {
-    max-width: 100%;
-  }
 }
 
 .social li {
