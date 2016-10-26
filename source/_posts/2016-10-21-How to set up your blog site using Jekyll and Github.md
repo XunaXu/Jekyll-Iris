@@ -5,19 +5,21 @@ permalink:  "How to set up your blog site using Jekyll and Github"
 date:   2016-10-21
 ---
 
-Here is a step by step guide to set up a Jekyll site and github page. It covers from starting with a generic theme to deploying to github. We are using Jekyll Iris Theme as an example here.
-
+Since I set up this site using Jekyll and Github Page, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most.
 <br/>
+With this guide you will be able to quickly and easily have a blog ready to go, without spending any money!
+
+<br/>		
 
 ##Step 1: Setting Up and Running a Jekyll Site Locally
-You can clone Jekyll Iris theme by following commands below, or you can find a theme you like at [Jekyll Theme website](http://jekyllthemes.org/)
+You can clone Jekyll Iris theme by following the commands below, or you can find a theme you like at [Jekyll Theme website](http://jekyllthemes.org/)
 ```
 git clone http://github.com/XunaXu/Jeykll-Iris.git
 cd Jeykll-Iris
 bundle install
 jekyll serve
 ```
-Open a web broswer at this address: http://127.0.0.1:4000/Jekyll-Iris/
+Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/
 
 {{site.div-expand}}
 <img src="{{site.baseurl}}/assets/images/setup_jekyll" alt="Set up and run a jekyll theme"/>
@@ -27,10 +29,10 @@ I am using a Mac which has pre-installed Ruby. You may need to download [Ruby] (
 <br/>
 
 ##Step 2: Customising The Site
-Now you have a generic site up running, it it the time to make it yours.
+Now you have a generic site up running, it is time to make it yours.
 
 * ###Update _config.yml
-	Open the jekyll iris project using an IDE or whatever way you prefer. there is _config.yml located at on the top level of directory. There are a list of variables in _config.yml we need to change. **Any changes in this file requires to run 'jekyll serve' to take effects**.
+	Open the jekyll iris project using an IDE or whatever way you prefer. There is _config.yml located at the top level of the directory. There are a list of variables in _config.yml we need to change. **Any changes in this file requires to run 'jekyll serve' to take effect**.
 
 	{{site.div-expand}}
 	<img src="{{site.baseurl}}/assets/images/config.jpg" alt="_config.yml file">
@@ -49,7 +51,7 @@ Update the title variable to your name or whatever you like. This will impact on
 	linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
 	avatar    : /assets/images/avatar.jpg
 	```
-	Social media accounts are your contact details in footer, so people can connect with you via github, twiiter and linkedin. To change avatar, you need to replace avatar.jpg located at Jekyll-Iris/source/assets/images. The rest are not being used and only for house keeping.
+	Social media accounts are your contact details in the footer, so people can connect with you via github, twitter and linkedin. To change the avatar, you need to replace avatar.jpg located at Jekyll-Iris/source/assets/images. The rest are not being used and are there only for house keeping.
 
 	* ####Add Google Analytics
 	```
@@ -73,7 +75,7 @@ Disqus_shortname is your disqus user name, you can register one from the [Disqus
 	subscribe: true
 	```
 If subscribe variable is set to false, the subscribe form is not displayed.
-Here is the [blog post](http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website) from mail chimps for getting a subscribe form. Once you have the embed form code, copy and paste into Jekyll-Iris/source/_includes/subscribe.html.
+Here is the [blog post](http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website) from mail chimps for getting a subscribe form. Once you have the embeded form code, copy and paste into Jekyll-Iris/source/_includes/subscribe.html.
 
 	* ####Configurate which social media account can share your blog post
 	```
@@ -87,7 +89,7 @@ Here is the [blog post](http://kb.mailchimp.com/lists/signup-forms/add-a-signup-
 	tumblr-share: false
 	pinterest-share: false
 	```
-You can simply change the value true or false, you can turn share icons on or off for your blog posts.
+You can simply change the value to true or false, you can turn share icons on or off for your blog posts.
 
 	* ####Configurate how many posts in one page
 	```
@@ -147,7 +149,7 @@ permalink: This needs to be unique, it will become a part of the url
 date: Posts are sorted by the date in a descendant order.
 
 3. ####Write the content
-	You can use markdown syntax and/or a normal html syntax to write blog content. Once you are familiar with markdown syntax, it does speed up comparing with html syntax. simply you type less.  
+	You can use markdown syntax and/or a normal html syntax to write blog content. Once you are familiar with markdown syntax, it is faster to write your posts compared with html syntax.   
 	{{site.div-expand}}
 	<img src="{{site.baseurl}}/assets/images/syntax.jpg" alt="Markdown and html syntax as an example">
 	{{site.end-div-expand}}
@@ -172,7 +174,7 @@ date: Posts are sorted by the date in a descendant order.
 	Now you have a web page hosted at GitHub. There are a couple of more things we need to do before deploying your Jekyll site into the repository.  Back to _config.yml, we need to change two variables: url and baseurl. url should be your GitHub page as yourUserName.github.io. and baseurl should be empty. Your site will be hosted at this url 'yourUserName.github.io' after deployment.
 
 3. ####Deploy to GitHub
-	Finally, it is the deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to change the github repo to yours.
+	Finally, it is deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to change the github repo to yours.
 	```cd _site
 	git init
 	git add --all
@@ -180,7 +182,7 @@ date: Posts are sorted by the date in a descendant order.
 	git push --force --quiet "https://github.com/yourAccountName/your.git" master:gh-pages
 	```
 
-Congratulations! Your site should be alive at this address, http://yourUserName.github.io. Not working? Shoot me the problems, I will try to help you out!
+Congratulations! Your site should be live at this address, http://yourUserName.github.io.
 
 <br/>
 
