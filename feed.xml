@@ -5,13 +5,13 @@
     <description>A free Jekyll theme for download</description>
     <link>http://xunaxu.github.io/Jekyll-Iris/</link>
     <atom:link href="http://xunaxu.github.io/Jekyll-Iris/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Oct 2016 20:42:04 +1030</pubDate>
-    <lastBuildDate>Wed, 26 Oct 2016 20:42:04 +1030</lastBuildDate>
+    <pubDate>Wed, 26 Oct 2016 20:52:16 +1030</pubDate>
+    <lastBuildDate>Wed, 26 Oct 2016 20:52:16 +1030</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
         <title>How to Set Up a Blog Site Using Jekyll and Github</title>
-        <description>&lt;p&gt;Since I set up this site using Jekyll and Github Page, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most.
+        <description>&lt;p&gt;Since I set up this site using Jekyll and Github Pages, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most.
 &lt;br /&gt;
 With this guide you will be able to quickly and easily have a blog ready to go, without spending any money!&lt;/p&gt;
 
@@ -195,8 +195,8 @@ date: Posts are sorted by the date in a descendant order.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;h4 id=&quot;get-a-github-page&quot;&gt;Get a GitHub Page&lt;/h4&gt;
-    &lt;p&gt;Create a GitHub repository named yourUserName.github.io. Having trouble? Follow steps at &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Page&lt;/a&gt;.&lt;/p&gt;
+    &lt;h4 id=&quot;get-a-github-pages&quot;&gt;Get a GitHub Pages&lt;/h4&gt;
+    &lt;p&gt;Create a GitHub repository named yourUserName.github.io. Having trouble? Follow steps at &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;update-variables-in-configyml&quot;&gt;Update Variables in _config.yml&lt;/h4&gt;
