@@ -20,7 +20,7 @@ jekyll serve
 Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/
 
 {{site.div-expand}}
-<img src="{{site.baseurl}}/assets/images/setup_jekyll" alt="Set up and run a jekyll theme"/>
+<img src="{{site.baseurl}}/assets/images/setup_jekyll.jpg" alt="Set up and run a jekyll theme"/>
 {{site.end-div-expand}}
 I am using a Mac which has pre-installed Ruby. You may need to download [Ruby](https://www.ruby-lang.org/en/downloads/), if 'bundle install' is not working, you may also need to install it using this command 'gem install bundle'.
 
