@@ -44,12 +44,33 @@ body {
   @include transition(opacity .15s ease-in);
 }
 .expandable[expanded="true"] {
+  overflow: auto;
+  border: 2px solid $light-gray-color;
   height: auto;
   visibility:visible;
   opacity: 1;
   @include transition(opacity .15s ease-out);
 }
 
+p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.hint {
+  border-radius: $base-border-radius;
+  border: 1px solid $primary-color;
+  padding: $mini-spacing;
+  margin-bottom: $small-spacing;
+}
+
+img{
+  max-width: 200%;
+
+  @include media($min-tablet){
+    max-width: 100%;
+  }
+}
 .social {
     li {
       display: inline-block;
@@ -60,7 +81,7 @@ body {
       @include transition(opacity .15s ease-in-out);
       color: $medium-gray-color;
       text-decoration: none;
-        color: $primary-color;
+      color: $primary-color;
 
       &:hover,
       &:focus,
@@ -84,7 +105,3 @@ body {
       }
     }
   }
-
- p {
-     white-space: pre-wrap;
- }

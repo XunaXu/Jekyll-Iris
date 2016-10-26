@@ -78,7 +78,11 @@
 
     .title{
       font-weight: bold;
-      font-size: 32px;
+      font-size: 30px;
+
+      @include media($max-tablet){
+        font-size: 27px;
+      }
     }
   }
   .post-content{

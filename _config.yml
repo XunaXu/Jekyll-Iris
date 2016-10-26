@@ -12,9 +12,9 @@ sass:
   style: expanded # compressed # expanded
 
 # permalink and highlighter
-permalink   : /:year/:title/
-markdown    : kramdown  #define which markdown you wanna to use for your site.
-highlighter : pygments  #define which lighlighter you wanna to use for your code section.
+permalink : /:year/:title/
+markdown  : kramdown  #define which markdown you wanna to use for your site.
+highlighter : rouge  #define which lighlighter you wanna to use for your code section.
 
 
 # SEO settings
@@ -81,3 +81,6 @@ pinterest-share: false
 ##HACKs Really dont wanna type this all the time. Maybe mark down should include a syntax about expand and collapse.
 div-expand: <div class="expand-div">Having trouble? Have a look at my screen, it may help. <button class="toggle-button" >expand</button> <div class="expandable" expanded="false">
 end-div-expand: </div></div>
+
+hint: <div class="hint"><strong> Useful Tips > </strong>
+end-hint: </div>
