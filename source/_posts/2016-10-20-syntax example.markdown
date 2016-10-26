@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "Consectetuer adipiscing elit-4"
-permalink:  "consectetuer-adipiscing-elit-4"
-date:   2015-12-21 20:08:35 -0200
-categories: jekyll update
+title:  "Markdown Syntax Example"
+permalink:  "Markdown Syntax Example"
+date:   2016-10-20
 ---
 
 

@@ -50,6 +50,14 @@ body {
   visibility:visible;
   opacity: 1;
   @include transition(opacity .15s ease-out);
+
+  img{
+    max-width: 200%;
+
+    @include media($min-tablet){
+      max-width: 100%;
+    }
+  }
 }
 
 p {
@@ -64,13 +72,7 @@ p {
   margin-bottom: $small-spacing;
 }
 
-img{
-  max-width: 200%;
 
-  @include media($min-tablet){
-    max-width: 100%;
-  }
-}
 .social {
     li {
       display: inline-block;

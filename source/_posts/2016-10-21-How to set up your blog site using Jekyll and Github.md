@@ -5,9 +5,7 @@ permalink:  "How to set up your blog site using Jekyll and Github"
 date:   2016-10-21
 ---
 
-Since I set up this site using Jekyll and Github Pages, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most.
-<br/>
-With this guide you will be able to quickly and easily have a blog ready to go, without spending any money!
+Since I set up this site using Jekyll and Github Pages, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most. With this guide you will be able to quickly and easily have a blog ready to go!
 
 <br/>		
 
