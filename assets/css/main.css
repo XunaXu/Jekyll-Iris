@@ -443,7 +443,7 @@ body {
   transition: opacity 0.15s ease-out;
 }
 .expandable[expanded="true"] img {
-  max-width: 200%;
+  max-width: 250%;
 }
 @media screen and (min-width: 768px) {
   .expandable[expanded="true"] img {
@@ -791,6 +791,8 @@ body.home-intro .intro {
   border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   /* relative value */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   box-shadow: 0px 0px 5px #7E57C2;
   transition: linear 0.25s;
   max-width: 120px;
@@ -799,6 +801,8 @@ body.home-intro .intro {
 .circle-avatar img {
   border-radius: 50%;
   /* relative value for adjustable image size */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
 }
 .circle-avatar:hover {
   transition: ease-out 0.2s;
