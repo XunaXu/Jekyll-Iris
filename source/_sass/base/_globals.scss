@@ -52,7 +52,7 @@ body {
   @include transition(opacity .15s ease-out);
 
   img{
-    max-width: 200%;
+    max-width: 250%;
 
     @include media($min-tablet){
       max-width: 100%;
