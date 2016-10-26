@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>How to Set Up a Blog Site Using Jekyll and Github</title>
-  <meta name="description" content="Here is a step by step guide to set up a Jekyll site and github page. It covers from starting with a generic theme to deploying to github. We are using Jekyl...">
+  <meta name="description" content="Since I set up this site using Jekyll and Github Page, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It c...">
 
   <link rel="stylesheet" href="/Jekyll-Iris/assets/css/main.css">
   <link rel="canonical" href="http://xunaxu.github.io/Jekyll-Iris/How to set up your blog site using Jekyll and Github">
@@ -131,7 +131,7 @@
 
 
    </div>
-      <div class="post-meta">Oct 21, 2016 &nbsp; | &nbsp; 9 Min Read &nbsp; | &nbsp;
+      <div class="post-meta">Oct 21, 2016 &nbsp; | &nbsp; 10 Min Read &nbsp; | &nbsp;
        <span class="disqus-comment-count" data-disqus-identifier="How to Set Up a Blog Site Using Jekyll and Github"></span>
       </div>
     </div>
@@ -140,19 +140,21 @@
 
 
   <div class="post-content container" itemprop="articleBody">
-    <p>Here is a step by step guide to set up a Jekyll site and github page. It covers from starting with a generic theme to deploying to github. We are using Jekyll Iris Theme as an example here.</p>
+    <p>Since I set up this site using Jekyll and Github Page, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most.
+<br />
+With this guide you will be able to quickly and easily have a blog ready to go, without spending any money!</p>
 
 <p><br /></p>
 
 <h2 id="step-1-setting-up-and-running-a-jekyll-site-locally">Step 1: Setting Up and Running a Jekyll Site Locally</h2>
-<p>You can clone Jekyll Iris theme by following commands below, or you can find a theme you like at <a href="http://jekyllthemes.org/">Jekyll Theme website</a>
+<p>You can clone Jekyll Iris theme by following the commands below, or you can find a theme you like at <a href="http://jekyllthemes.org/">Jekyll Theme website</a>
 <code class="highlighter-rouge">
 git clone http://github.com/XunaXu/Jeykll-Iris.git
 cd Jeykll-Iris
 bundle install
 jekyll serve
 </code>
-Open a web broswer at this address: http://127.0.0.1:4000/Jekyll-Iris/</p>
+Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/</p>
 
 <div class="expand-div">Having trouble? Have a look at my screen, it may help. <button class="toggle-button">expand</button> <div class="expandable" expanded="false">
 <img src="/Jekyll-Iris/assets/images/setup_jekyll" alt="Set up and run a jekyll theme" />
@@ -162,12 +164,12 @@ Open a web broswer at this address: http://127.0.0.1:4000/Jekyll-Iris/</p>
 <p><br /></p>
 
 <h2 id="step-2-customising-the-site">Step 2: Customising The Site</h2>
-<p>Now you have a generic site up running, it it the time to make it yours.</p>
+<p>Now you have a generic site up running, it is time to make it yours.</p>
 
 <ul>
   <li>
     <h3 id="update-configyml">Update _config.yml</h3>
-    <p>Open the jekyll iris project using an IDE or whatever way you prefer. there is _config.yml located at on the top level of directory. There are a list of variables in _config.yml we need to change. <strong>Any changes in this file requires to run ‘jekyll serve’ to take effects</strong>.</p>
+    <p>Open the jekyll iris project using an IDE or whatever way you prefer. There is _config.yml located at the top level of the directory. There are a list of variables in _config.yml we need to change. <strong>Any changes in this file requires to run ‘jekyll serve’ to take effect</strong>.</p>
 
     <div class="expand-div">Having trouble? Have a look at my screen, it may help. <button class="toggle-button">expand</button> <div class="expandable" expanded="false">
   <img src="/Jekyll-Iris/assets/images/config.jpg" alt="_config.yml file" />
@@ -189,7 +191,7 @@ Update the title variable to your name or whatever you like. This will impact on
   linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
   avatar    : /assets/images/avatar.jpg
  </code>
-  Social media accounts are your contact details in footer, so people can connect with you via github, twiiter and linkedin. To change avatar, you need to replace avatar.jpg located at Jekyll-Iris/source/assets/images. The rest are not being used and only for house keeping.</p>
+  Social media accounts are your contact details in the footer, so people can connect with you via github, twitter and linkedin. To change the avatar, you need to replace avatar.jpg located at Jekyll-Iris/source/assets/images. The rest are not being used and are there only for house keeping.</p>
       </li>
       <li>
         <h4 id="add-google-analytics">Add Google Analytics</h4>
@@ -216,7 +218,7 @@ Disqus_shortname is your disqus user name, you can register one from the <a href
   subscribe: true
  </code>
 If subscribe variable is set to false, the subscribe form is not displayed.
-Here is the <a href="http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website">blog post</a> from mail chimps for getting a subscribe form. Once you have the embed form code, copy and paste into Jekyll-Iris/source/_includes/subscribe.html.</p>
+Here is the <a href="http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website">blog post</a> from mail chimps for getting a subscribe form. Once you have the embeded form code, copy and paste into Jekyll-Iris/source/_includes/subscribe.html.</p>
       </li>
       <li>
         <h4 id="configurate-which-social-media-account-can-share-your-blog-post">Configurate which social media account can share your blog post</h4>
@@ -231,7 +233,7 @@ Here is the <a href="http://kb.mailchimp.com/lists/signup-forms/add-a-signup-for
   tumblr-share: false
   pinterest-share: false
  </code>
-You can simply change the value true or false, you can turn share icons on or off for your blog posts.</p>
+You can simply change the value to true or false, you can turn share icons on or off for your blog posts.</p>
       </li>
       <li>
         <h4 id="configurate-how-many-posts-in-one-page">Configurate how many posts in one page</h4>
@@ -301,7 +303,7 @@ date: Posts are sorted by the date in a descendant order.</p>
   </li>
   <li>
     <h4 id="write-the-content">Write the content</h4>
-    <p>You can use markdown syntax and/or a normal html syntax to write blog content. Once you are familiar with markdown syntax, it does speed up comparing with html syntax. simply you type less.</p>
+    <p>You can use markdown syntax and/or a normal html syntax to write blog content. Once you are familiar with markdown syntax, it is faster to write your posts compared with html syntax.</p>
     <div class="expand-div">Having trouble? Have a look at my screen, it may help. <button class="toggle-button">expand</button> <div class="expandable" expanded="false">
  <img src="/Jekyll-Iris/assets/images/syntax.jpg" alt="Markdown and html syntax as an example" />
  </div></div>
@@ -331,7 +333,7 @@ date: Posts are sorted by the date in a descendant order.</p>
   </li>
   <li>
     <h4 id="deploy-to-github">Deploy to GitHub</h4>
-    <p>Finally, it is the deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to change the github repo to yours.
+    <p>Finally, it is deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to change the github repo to yours.
  <code class="highlighter-rouge">cd _site
  git init
  git add --all
@@ -341,7 +343,7 @@ date: Posts are sorted by the date in a descendant order.</p>
   </li>
 </ol>
 
-<p>Congratulations! Your site should be alive at this address, http://yourUserName.github.io. Not working? Shoot me the problems, I will try to help you out!</p>
+<p>Congratulations! Your site should be live at this address, http://yourUserName.github.io.</p>
 
 <p><br /></p>
 
