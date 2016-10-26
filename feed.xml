@@ -5,8 +5,8 @@
     <description>A free Jekyll theme for download</description>
     <link>http://xunaxu.github.io/Jekyll-Iris/</link>
     <atom:link href="http://xunaxu.github.io/Jekyll-Iris/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Oct 2016 01:41:40 +1030</pubDate>
-    <lastBuildDate>Thu, 27 Oct 2016 01:41:40 +1030</lastBuildDate>
+    <pubDate>Thu, 27 Oct 2016 01:56:18 +1030</pubDate>
+    <lastBuildDate>Thu, 27 Oct 2016 01:56:18 +1030</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -58,9 +58,9 @@ Update the title variable to your name or whatever you like. This will impact on
   github    : http://github.com/xunaxu
   twitter   : http://twitter.com/xuna_x
   linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
-  avatar    : /assets/images/avatar.jpg
+  avatar    : /assets/images/my_avatar.jpg
  &lt;/code&gt;
-  Social media accounts are your contact details in the footer, so people can connect with you via github, twitter and linkedin. To change the avatar, you need to replace avatar.jpg located at Jekyll-Iris/source/assets/images. The rest are not being used and are there only for house keeping.&lt;/p&gt;
+  Social media accounts are your contact details in the footer, so people can connect with you via github, twitter and linkedin. To change the avatar, you need to replace my_avatar.jpg located at Jekyll-Iris/source/assets/images. The rest are not being used and are there only for house keeping.&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h4 id=&quot;add-google-analytics&quot;&gt;Add Google Analytics&lt;/h4&gt;
