@@ -4,6 +4,6 @@ source 'http://rubygems.org'
 
 group :development do
   gem 'sass', '~> 3.4.10'
-  gem "jekyll", "~>3.0.2"
+  gem "jekyll", "~> 3.0.5"
   gem 'jekyll-paginate'
 end

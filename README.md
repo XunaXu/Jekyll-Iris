@@ -18,9 +18,7 @@
 
 ---
 
-### [Demo](https://xunaxu.github.io/Jekyll-Iris/)
-
-#### [Documentation](https://xunaxu.github.io/Jekyll-Iris/How%20to%20set%20up%20your%20blog%20site%20using%20Jekyll%20and%20Github)
+### [Demo + Documentation](https://xunaxu.github.io/Jekyll-Iris/)
 
 #### index page
 ![Jeykll-Iris - free Jekyll theme](/homepage.gif)
