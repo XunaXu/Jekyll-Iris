@@ -5,13 +5,13 @@
     <description>A free Jekyll theme for download</description>
     <link>http://xunaxu.github.io/Jekyll-Iris/</link>
     <atom:link href="http://xunaxu.github.io/Jekyll-Iris/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Oct 2016 01:56:18 +1030</pubDate>
-    <lastBuildDate>Thu, 27 Oct 2016 01:56:18 +1030</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <pubDate>Fri, 28 Oct 2016 17:26:17 +1030</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 17:26:17 +1030</lastBuildDate>
+    <generator>Jekyll v3.0.5</generator>
     
       <item>
-        <title>How to Set Up a Blog Site Using Jekyll and Github</title>
-        <description>&lt;p&gt;Since I set up this site using Jekyll and Github Pages, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most. With this guide you will be able to quickly and easily have a blog ready to go!&lt;/p&gt;
+        <title>How to Set Up a Blog Site Using Jekyll and GitHub Pages</title>
+        <description>&lt;p&gt;Since I set up this site using Jekyll and Github Pages, why not write a post? There is no hosting cost and easy to use. Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most. With this guide you will be able to quickly and easily have a blog ready to go!&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -202,12 +202,12 @@ date: Posts are sorted by the date in a descendant order.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;deploy-to-github&quot;&gt;Deploy to GitHub&lt;/h4&gt;
-    &lt;p&gt;Finally, it is deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to change the github repo to yours.
+    &lt;p&gt;Finally, it is deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to replace ‘yourAccountName’ in the repository address.
  &lt;code class=&quot;highlighter-rouge&quot;&gt;cd _site
  git init
  git add --all
  git commit -m &quot;Deploy to GitHub Pages&quot;
- git push --force --quiet &quot;https://github.com/yourAccountName/your.git&quot; master:gh-pages
+ git push --force --quiet &quot;https://github.com/yourAccountName/yourAccountName.github.io.git&quot; master
 &lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -219,6 +219,8 @@ date: Posts are sorted by the date in a descendant order.&lt;/p&gt;
 &lt;h2 id=&quot;step-5--getting-a-customised-domain&quot;&gt;Step 5:  Getting a Customised Domain&lt;/h2&gt;
 
 &lt;p&gt;Great news, you have spent absolutely zero money to own a blog site so far. You maybe happy with a generic github domain, as yourUserName.github.io, but you may want to have a domain ending with .com, .net, .org etc. Here is a youtube tutorial which helped me to set it up. &lt;a href=&quot;https://www.youtube.com/watch?v=CJLb8UUIJPg&quot;&gt;How to: Free Website Hosting + Custom Domain with Github Pages&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Don’t forget to update the url variable in _config.yml to whatever domain name you decided to buy.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -254,8 +256,8 @@ date: Posts are sorted by the date in a descendant order.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 21 Oct 2016 00:00:00 +1030</pubDate>
-        <link>http://xunaxu.github.io/Jekyll-Iris/How to set up your blog site using Jekyll and Github</link>
-        <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/How to set up your blog site using Jekyll and Github</guid>
+        <link>http://xunaxu.github.io/Jekyll-Iris/How_To_Set_Up_Your_Blog_Site_Using_Jekyll_and_GitHub_Pages</link>
+        <guid isPermaLink="true">http://xunaxu.github.io/Jekyll-Iris/How_To_Set_Up_Your_Blog_Site_Using_Jekyll_and_GitHub_Pages</guid>
         
         
       </item>
