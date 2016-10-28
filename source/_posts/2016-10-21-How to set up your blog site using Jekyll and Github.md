@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "How to Set Up a Blog Site Using Jekyll and Github"
-permalink:  "How-to-Set-Up-Your-Blog-Site-Using-Jekyll-and-Github"
+title:  "How to Set Up a Blog Site Using Jekyll and GitHub Pages"
+permalink:  "How_To_Set_Up_Your_Blog_Site_Using_Jekyll_and_GitHub_Pages"
 date:   2016-10-21
 ---
 
-Since I set up this site using Jekyll and Github Pages, why not write a post about it? Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most. With this guide you will be able to quickly and easily have a blog ready to go!
+Since I set up this site using Jekyll and Github Pages, why not write a post? There is no hosting cost and easy to use. Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most. With this guide you will be able to quickly and easily have a blog ready to go!
 
 <br/>		
 
@@ -172,12 +172,12 @@ date: Posts are sorted by the date in a descendant order.
 	Now you have a web page hosted at GitHub. There are a couple of more things we need to do before deploying your Jekyll site into the repository.  Back to _config.yml, we need to change two variables: url and baseurl. url should be your GitHub page as yourUserName.github.io. and baseurl should be empty. Your site will be hosted at this url 'yourUserName.github.io' after deployment.
 
 3. ####Deploy to GitHub
-	Finally, it is deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to change the github repo to yours.
+	Finally, it is deployment time. How exciting! The site will be published and we will find out if it s going to work or not. The deploy command lines are below, you just need to replace 'yourAccountName' in the repository address.
 	```cd _site
 	git init
 	git add --all
 	git commit -m "Deploy to GitHub Pages"
-	git push --force --quiet "https://github.com/yourAccountName/your.git" master:gh-pages
+	git push --force --quiet "https://github.com/yourAccountName/yourAccountName.github.io.git" master
 	```
 
 Congratulations! Your site should be live at this address, http://yourUserName.github.io.
