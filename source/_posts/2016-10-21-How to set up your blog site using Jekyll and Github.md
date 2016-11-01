@@ -19,7 +19,7 @@ bundle install
 jekyll serve
 ```
 Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/.
-Note: I am using a Mac which has a 2.3.0 Ruby pre-installed. You may need to download [Ruby](https://www.ruby-lang.org/en/downloads/) if you don't have it.
+Note: I am using a Mac with 2.3.0 Ruby installed. You may need to [download](https://www.ruby-lang.org/en/downloads/) or update Ruby.
 
 {{site.div-expand}}
 <img src="{{site.baseurl}}/assets/images/setup_jekyll.jpg" alt="Set up and run a jekyll theme"/>
