@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>How to Set Up a Blog Site Using Jekyll and GitHub Pages</title>
-  <meta name="description" content="Since I set up this site using Jekyll and Github Pages, why not write a post? There is no hosting cost and easy to use. Here is a step by step guide to set u...">
+  <meta name="description" content="Since I set up this site using Jekyll and Github Pages, why not write a post? There is no hosting cost and it is easy to use. Here is a step by step guide to...">
 
   <link rel="stylesheet" href="/Jekyll-Iris/assets/css/main.css">
   <link rel="canonical" href="http://xunaxu.github.io/Jekyll-Iris/How_To_Set_Up_Your_Blog_Site_Using_Jekyll_and_GitHub_Pages">
@@ -140,24 +140,25 @@
 
 
   <div class="post-content container" itemprop="articleBody">
-    <p>Since I set up this site using Jekyll and Github Pages, why not write a post? There is no hosting cost and easy to use. Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most. With this guide you will be able to quickly and easily have a blog ready to go!</p>
+    <p>Since I set up this site using Jekyll and Github Pages, why not write a post? There is no hosting cost and it is easy to use. Here is a step by step guide to set up a Jekyll site using GitHub. It covers from the basic such as starting with a generic theme to deployment. We are using Jekyll Iris Theme as an example here because that is what I am familiar with the most. With this guide you will be able to quickly and easily have a blog ready to go!</p>
 
 <p><br /></p>
 
 <h2 id="step-1-setting-up-and-running-a-jekyll-site-locally">Step 1: Setting Up and Running a Jekyll Site Locally</h2>
 <p>You can clone Jekyll Iris theme by following the commands below, or you can find a theme you like at <a href="http://jekyllthemes.org/">Jekyll Theme website</a>
 <code class="highlighter-rouge">
-git clone http://github.com/XunaXu/Jeykll-Iris.git
-cd Jeykll-Iris
+git clone http://github.com/XunaXu/Jekyll-Iris.git
+cd Jekyll-Iris
+gem install bundle (if you don't have bundle installed in your computer)
 bundle install
 jekyll serve
 </code>
-Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/</p>
+Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/.
+Note: I am using a Mac with 2.3.0 Ruby installed. You may need to <a href="https://www.ruby-lang.org/en/downloads/">download</a> or update Ruby.</p>
 
 <div class="expand-div">Having trouble? Have a look at my screen, it may help. <button class="toggle-button">expand</button> <div class="expandable" expanded="false">
 <img src="/Jekyll-Iris/assets/images/setup_jekyll.jpg" alt="Set up and run a jekyll theme" />
 </div></div>
-<p>I am using a Mac which has pre-installed Ruby. You may need to download <a href="https://www.ruby-lang.org/en/downloads/">Ruby</a>, if ‘bundle install’ is not working, you may also need to install it using this command ‘gem install bundle’.</p>
 
 <p><br /></p>
 
