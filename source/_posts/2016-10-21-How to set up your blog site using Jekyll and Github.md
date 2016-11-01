@@ -12,17 +12,19 @@ Since I set up this site using Jekyll and Github Pages, why not write a post? Th
 ##Step 1: Setting Up and Running a Jekyll Site Locally
 You can clone Jekyll Iris theme by following the commands below, or you can find a theme you like at [Jekyll Theme website](http://jekyllthemes.org/)
 ```
-git clone http://github.com/XunaXu/Jeykll-Iris.git
-cd Jeykll-Iris
+git clone http://github.com/XunaXu/Jekyll-Iris.git
+cd Jekyll-Iris
+gem install bundle (if you don't have bundle installed in your computer)
 bundle install
 jekyll serve
 ```
-Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/
+Open a web browser at this address: http://127.0.0.1:4000/Jekyll-Iris/.
+Note: I am using a Mac which has a 2.3.0 Ruby pre-installed. You may need to download [Ruby](https://www.ruby-lang.org/en/downloads/) if you don't have it.
 
 {{site.div-expand}}
 <img src="{{site.baseurl}}/assets/images/setup_jekyll.jpg" alt="Set up and run a jekyll theme"/>
 {{site.end-div-expand}}
-I am using a Mac which has pre-installed Ruby. You may need to download [Ruby](https://www.ruby-lang.org/en/downloads/), if 'bundle install' is not working, you may also need to install it using this command 'gem install bundle'.
+
 
 <br/>
 
