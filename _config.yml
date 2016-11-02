@@ -18,17 +18,17 @@ highlighter : rouge  #define which lighlighter you wanna to use for your code se
 
 
 # SEO settings
-title: Xuna Xu
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
+title: Daniel Wilczynski
+description: "Biographical Page & Bitcoin Blog"
+keywords: "Bitcoin, Tech"
 
 
 # Site settings
-url: http://xunaxu.github.io
-baseurl: "/Jekyll-Iris"
+url: http://Daunus.github.io
+baseurl: "/daniel"
 paginate_path: /page:num
 gems: [jekyll-paginate]
-paginate: 2
+paginate: 10
 
 
 # Dynamic Text on the Header
@@ -40,29 +40,28 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # Keep the <span> attribute on! It makes the text working when resizing the screen
-  - text: "<span>The best preparation for tomorrow is doing your best today.</span>"
-  - text: "<span>Without documentation and test cases, my 'masterpiece' is my own graveyard. - xunaxu</span>"
+  - text: "<span>Inspiring quote1.</span>"
+  - text: "<span>Inspiring quote2. </span>"
 
 
 
 # Author settings
 author:
-  name      : Xuna Xu
-  job       : Software Engineer
-  email     : 78756e61@gmail.com
-  url       : http://xunaxu.github.io
-  github    : http://github.com/xunaxu
-  twitter   : http://twitter.com/xuna_x
-  linkedin  : https://au.linkedin.com/in/xuna-xu-8a135094
+  name      : Daniel Wilczynski
+  job       : Founder Of HardBlock.net Bitcoin Exchange
+  email     : info@hardblock.net
+  url       : http://Daunus.github.io
+  github    : https://github.com/Daunus
+  twitter   : https://twitter.com/danWilcz
   avatar    : /assets/images/my_avatar.jpg
 
 # google analytics
-google_analytics: UA-819232-** #### REPLACE ME, register your google analytics account if you don't have one ####
+#google_analytics: UA-819232-** #### REPLACE ME, register your google analytics account if you don't have one ####
 #repo: http://github.com/xunaxu/jekyll-iris
 
 # comments
 comments: true
-disqus_shortname: "xunaxu" #### REPLACE ME, register your account at disqus if you don't have one ####
+disqus_shortname: "danielwilczynski" #### REPLACE ME, register your account at disqus if you don't have one ####
 
 # subscribe
 subscribe: true
@@ -70,11 +69,11 @@ subscribe: true
 
 #share
 email-share: true
-fb-share: true
+fb-share: false
 twitter-share: true
-linkedin-share: true
-reddit-share: false
-google-plus-share: true
+linkedin-share: false
+reddit-share: true
+google-plus-share: false
 tumblr-share: false
 pinterest-share: false
 
